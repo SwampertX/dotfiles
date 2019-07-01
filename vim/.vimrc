@@ -1,11 +1,7 @@
-set nocompatible
-set ignorecase
+" Initialize vim plug
+source ~/.vim/myvimrc.d/vim_plug.vim
 
-set tabstop=4 shiftwidth=4 expandtab
-set path+="./**/*"
+set runtimepath^=~/.vim/myvimrc.d
 
-filetype on
-syntax on
-
-autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
+runtime! after/*.vim
 

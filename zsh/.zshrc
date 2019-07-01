@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/titanx/.oh-my-zsh"
+export ZSH="/home/titanx/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -72,6 +72,7 @@ plugins=(
     git
     vi-mode
     zsh-autosuggestions
+    fasd
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -107,6 +108,8 @@ alias py3="python3"
 
 alias rails="bundle exec rails"
 alias rake="bundle exec rake"
+alias rubocop="bundle exec rubocop"
+alias rspec="bundle exec rspec"
 
 alias gc="git checkout"
 alias gm="git commit"
@@ -116,6 +119,13 @@ alias gph="git push"
 alias gst="git status"
 
 alias mkdir="mkdir -p"
+
+# more alternatives
+alias grep="rg"
+alias find="fd"
+
+alias vim="nvim"
+
 # PATHS
 export PATH="$HOME/.rbenv/bin:$PATH"
 
@@ -126,3 +136,11 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(rbenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+setxkbmap -option ctrl:nocaps
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export PAGER="less"
+export PATH="/home/titanx/.mozbuild/git-cinnabar:$PATH"
+
+export EDITOR="nvim"

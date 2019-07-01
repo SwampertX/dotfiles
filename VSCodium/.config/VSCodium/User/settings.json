@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "One Dark Pro Bold",
+    "editor.fontFamily": "'Droid Sans Mono for Powerline', 'monospace', monospace, 'Droid Sans Fallback'",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true
+}
