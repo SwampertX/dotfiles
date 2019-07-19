@@ -53,4 +53,11 @@ Plug 'tpope/vim-commentary'
 
 " target
 Plug 'wellle/targets.vim'
+
+" git wrapper, by tim pope
+Plug 'tpope/vim-fugitive'
+
+"
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()

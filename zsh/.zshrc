@@ -9,6 +9,7 @@ export ZSH="/home/titanx/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,6 +74,7 @@ plugins=(
     vi-mode
     zsh-autosuggestions
     fasd
+    mercurial
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -142,5 +144,12 @@ setxkbmap -option ctrl:nocaps
 export XDG_CONFIG_HOME="$HOME/.config"
 export PAGER="less"
 export PATH="/home/titanx/.mozbuild/git-cinnabar:$PATH"
+export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 export EDITOR="nvim"
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:/usr/local/go/bin:/home/titanx/go/bin"
+
+export PKG_CONFIG="/usr/bin/pkg-config"

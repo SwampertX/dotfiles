@@ -66,7 +66,14 @@
                     }
                 }
             }
+        },
+        "golang": {
+            "command": "gopls",
+            "args": [],
+            "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+            "filetypes": ["go"]
         }
     },
-   "coc.preferences.formatOnSaveFiletypes": ["typescriptreact", "typescript", "javascript", "javascriptreact"]
+    "coc.preferences.formatOnSaveFiletypes": ["typescriptreact", "typescript", "javascript", "javascriptreact", "css", "Markdown", "ruby"],
+    "solargraph.commandPath": "/home/titanx/.rbenv/shims/solargraph"
 }
