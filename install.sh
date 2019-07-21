@@ -32,3 +32,6 @@ function main {
     install_programs
     stow_packages
 }
+
+##### packages
+# flameshot, peek, compton
