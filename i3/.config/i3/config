@@ -191,7 +191,7 @@ bar {
 # Wallpaper and lockscreen
 exec_always feh --bg-scale $home/Pictures/wallpaper.jpg
 bindsym $mod+shift+x exec i3lock -i $home/Pictures/lockscreen.png
-exec_always compton
+exec_always compton # --config ~/.config/compton/compton.conf
 
 # Enable nice applets
 exec nm-applet
