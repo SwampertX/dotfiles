@@ -153,3 +153,4 @@ export GOBIN="$GOPATH/bin"
 export PATH="$PATH:/usr/local/go/bin:/home/titanx/go/bin"
 
 export PKG_CONFIG="/usr/bin/pkg-config"
+export TERM="xterm-256color"
