@@ -151,6 +151,7 @@ export EDITOR="nvim"
 export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
 export PATH="$PATH:/usr/local/go/bin:/home/titanx/go/bin"
+export PATH="$PATH:/opt"
 
 export PKG_CONFIG="/usr/bin/pkg-config"
 export TERM="xterm-256color"
