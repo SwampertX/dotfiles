@@ -112,6 +112,7 @@ alias rails="bundle exec rails"
 alias rake="bundle exec rake"
 alias rubocop="bundle exec rubocop"
 alias rspec="bundle exec rspec"
+alias jekyll="bundle exec jekyll"
 
 alias gc="git checkout"
 alias gm="git commit"
