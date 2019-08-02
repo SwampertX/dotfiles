@@ -25,3 +25,5 @@ set guicursor=
 set confirm
 set hidden
 set cmdheight=2
+
+set foldmethod=syntax
