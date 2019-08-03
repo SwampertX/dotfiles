@@ -22,4 +22,4 @@ nmap <silent> gr <Plug>(coc-references)
 set updatetime=500
 
 """"""""""""""" coc-prettier """""""""""""""""""
-command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+" command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
