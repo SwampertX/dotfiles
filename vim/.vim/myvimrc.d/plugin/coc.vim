@@ -18,5 +18,8 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+" quicker hovering display
+set updatetime=500
+
 """"""""""""""" coc-prettier """""""""""""""""""
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
