@@ -29,3 +29,8 @@ set cmdheight=2
 " enable folding, but unfold at first
 set foldmethod=syntax
 au BufRead * normal zR
+
+" sane navigation - move by visual line instead of linebreaks
+nnoremap j gj
+nnoremap k gk
+

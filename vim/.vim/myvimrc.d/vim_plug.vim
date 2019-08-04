@@ -46,7 +46,7 @@ Plug 'morhetz/gruvbox'
 Plug 'w0rp/ale'
 
 " latex
-Plug 'lervag/vimtex'
+" Plug 'lervag/vimtex'
 
 " comment
 Plug 'tpope/vim-commentary'
