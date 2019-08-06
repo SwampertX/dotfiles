@@ -129,31 +129,5 @@ alias find="fd"
 
 alias vim="nvim"
 
-# PATHS
-export PATH="$HOME/.rbenv/bin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-eval "$(rbenv init -)"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-setxkbmap -option ctrl:nocaps
-
-export XDG_CONFIG_HOME="$HOME/.config"
-export PAGER="less"
-export PATH="/home/titanx/.mozbuild/git-cinnabar:$PATH"
-export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-export EDITOR="nvim"
-export GOPATH="$HOME/go"
-export GOBIN="$GOPATH/bin"
-export PATH="$PATH:/usr/local/go/bin:/home/titanx/go/bin"
-export PATH="$PATH:/opt"
-export PATH="$PATH:$HOME/opt"
-
-export PKG_CONFIG="/usr/bin/pkg-config"
-export TERM="xterm-256color"
+# All environment variables live in ~/.profile.
+source ~/.profile
