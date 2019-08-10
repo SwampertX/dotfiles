@@ -26,35 +26,56 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PATH="$HOME/.cargo/bin:$PATH"
-if [ -e /home/titanx/.nix-profile/etc/profile.d/nix.sh ]; then . /home/titanx/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+##########################################################################
+##################  MY OWN VARIABLES #####################################
+##########################################################################
 
-# Environment variables. Force ZSH to source this file
+##############################
+######## Languages ###########
+##############################
+
+# RUBY
 export PATH="$HOME/.rbenv/bin:$PATH"
-
+eval "$(rbenv init -)"
+# RUST
+export PATH="$HOME/.cargo/bin:$PATH"
+# GO
+export GOPATH="$HOME/go"
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:/usr/local/go/bin:/home/titanx/go/bin"
+# JAVASCRIPT (NODE)
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-eval "$(rbenv init -)"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+##############################
+######## Installed ###########
+##############################
+# Nix (not in use)
+if [ -e /home/titanx/.nix-profile/etc/profile.d/nix.sh ]; then . /home/titanx/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+# Flatpak
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/titanx/.local/share/flatpak/exports/share"
+
+##############################
+############## CLI ###########
+##############################
 
 setxkbmap -option ctrl:nocaps
 
-export XDG_CONFIG_HOME="$HOME/.config"
 export PAGER="less"
-export PATH="/home/titanx/.mozbuild/git-cinnabar:$PATH"
-export FZF_DEFAULT_COMMAND="fd --type f --hidden --follow --exclude .git"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
 export EDITOR="nvim"
-export GOPATH="$HOME/go"
-export GOBIN="$GOPATH/bin"
-export PATH="$PATH:/usr/local/go/bin:/home/titanx/go/bin"
+export PKG_CONFIG="/usr/bin/pkg-config"
+export TERM="xterm-256color"
+
+export XDG_CONFIG_HOME="$HOME/.config"
+
 export PATH="$PATH:/opt"
 export PATH="$PATH:$HOME/opt"
 
-export PKG_CONFIG="/usr/bin/pkg-config"
-export TERM="xterm-256color"
-export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/titanx/.local/share/flatpak/exports/share"
+##############################
+########### MISC #############
+##############################
+# Mozilla
+export PATH="/home/titanx/.mozbuild/git-cinnabar:$PATH"
+
