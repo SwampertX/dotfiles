@@ -3,7 +3,7 @@
 backup_apt () {
     dpkg --get-selections > ./apt/my_packages.list
     sudo cp -R /etc/apt/sources.list* ./apt/
-    sudo apt-key exportall > ~/my_repo.keys
+    sudo apt-key exportall > ./apt/my_repo.keys
 }
 
 git_commit_push () {
