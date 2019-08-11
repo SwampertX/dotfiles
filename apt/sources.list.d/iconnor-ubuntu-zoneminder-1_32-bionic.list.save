@@ -1,0 +1,2 @@
+# deb http://ppa.launchpad.net/iconnor/zoneminder-1.32/ubuntu cosmic main # disabled on upgrade to cosmic
+# deb-src http://ppa.launchpad.net/iconnor/zoneminder-1.32/ubuntu bionic main

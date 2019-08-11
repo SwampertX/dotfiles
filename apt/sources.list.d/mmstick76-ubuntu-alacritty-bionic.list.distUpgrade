@@ -1,0 +1,2 @@
+# deb http://ppa.launchpad.net/mmstick76/alacritty/ubuntu cosmic main # disabled on upgrade to cosmic
+# deb-src http://ppa.launchpad.net/mmstick76/alacritty/ubuntu bionic main

@@ -8,7 +8,7 @@ backup_apt () {
 
 git_commit_push () {
     git add .
-    git commit -m "Automated backup"
+    git commit -m "Automated backup using backup.sh"
     git push origin master
 }
 

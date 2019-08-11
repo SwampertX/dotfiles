@@ -9,6 +9,9 @@ I believe dotfiles have to be built ground up, and personalized. This will reduc
 ### Screenshots (WIP)
 
 ### Install (WIP)
+```bash
+sudo ./install.sh
+```
 
 ### TODO
 * [ ]  Refactor the `install.sh` file into separate bash files
