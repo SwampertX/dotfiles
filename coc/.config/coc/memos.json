@@ -26,7 +26,7 @@
         "sysPrefix": "/usr",
         "fileHash": "cf3097d32a8ed046355b4ee1fc6352eb4d4686ba50cacbbf1d7f4d3e0dd9ff095226799385abe22109512916e5dcbb07cb5f3ed62ae46310d20e07f49e6d67b8"
       },
-      "expiry": 1562938091325
+      "expiry": 1565577915876
     },
     "/usr/bin/python2.v3": {
       "data": {
@@ -51,7 +51,7 @@
         "sysPrefix": "/usr",
         "fileHash": "abc4aa09fc9201e1e7a68f420ab215184b5248687e548fad9916ccd3173c6e5b109fbd403519755361fe2d1f59a353c111d2824f96d7c7fad2cf0a8717d33547"
       },
-      "expiry": 1562938091340
+      "expiry": 1565577915879
     },
     "/usr/bin/python.v3": {
       "data": {
@@ -76,7 +76,7 @@
         "sysPrefix": "/usr",
         "fileHash": "e6dfe1dcc28081b7f50e5099c6a5e8405520ed004469a6b0fb0d1a9afa2046bb77eb34f870039d0a642d4546f63a44a8559bebc3fd42ee56bb38b9422f21318d"
       },
-      "expiry": 1562938091339
+      "expiry": 1565577915878
     },
     "/usr/bin/python3.7.v3": {
       "data": {
@@ -101,7 +101,7 @@
         "sysPrefix": "/usr",
         "fileHash": "89f17c3faf30043ea0edfa5e1f9888bf41a938c8eb5aab73470c1fd7ba2260712808c0fee19c767a905ab357ffa5a5d992c27c1c769289b1fcaede6e96c74993"
       },
-      "expiry": 1562938091343
+      "expiry": 1565577915873
     },
     "/usr/bin/python3.v3": {
       "data": {
@@ -126,7 +126,7 @@
         "sysPrefix": "/usr",
         "fileHash": "5c6a8571f78b9cd50b0152c9862b716511b451a44dda86d0dd221f49b6a05f4d16455a8d5c6ebb59426c66dacc195bf2b5eba99b302a7b4051036f8c9052f480"
       },
-      "expiry": 1562938091341
+      "expiry": 1565577915885
     },
     "INTERPRETERS_CACHE_v3_CurrentPathService": [
       {
@@ -552,21 +552,21 @@
           "displayName": "Python 3.7.3 64-bit"
         }
       },
-      "expiry": 1562941340395
+      "expiry": 1565578477245
     },
     "/usr/bin/python.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 2.7.16 64-bit",
         "hash": "e6dfe1dcc28081b7f50e5099c6a5e8405520ed004469a6b0fb0d1a9afa2046bb77eb34f870039d0a642d4546f63a44a8559bebc3fd42ee56bb38b9422f21318d-7ab49058c443525416e16972834ca8d8"
       },
-      "expiry": 1562938091457
+      "expiry": 1565577915967
     },
     "/usr/bin/python3.interpreter.displayName.v7": {
       "data": {
         "displayName": "Python 3.7.3 64-bit",
         "hash": "5c6a8571f78b9cd50b0152c9862b716511b451a44dda86d0dd221f49b6a05f4d16455a8d5c6ebb59426c66dacc195bf2b5eba99b302a7b4051036f8c9052f480-c60906475f9650d4afa9f1a8a39fe8f4"
       },
-      "expiry": 1562938091500
+      "expiry": 1565577915987
     },
     "InterpreterAutoSeletionRule-system": {
       "architecture": 3,
@@ -620,7 +620,7 @@
           "displayName": "Python 2.7.16 64-bit"
         }
       },
-      "expiry": 1562938091488
+      "expiry": 1565577915979
     },
     "InterpreterAutoSeletionRule-cachedInterpreters": {
       "architecture": 3,
@@ -652,6 +652,35 @@
     "INTERPRETERS_CACHE_v3_PipEnvService:de66d7b82ed864c124954d591c039a8d": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:de66d7b82ed864c124954d591c039a8d": [],
     "autoSelectedWorkspacePythonInterpreter-/home/titanx/projects/swampertx.github.io": {
+      "architecture": 3,
+      "path": "/usr/bin/python3",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.7.3-final",
+        "major": 3,
+        "minor": 7,
+        "patch": 3,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.7.3-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "5c6a8571f78b9cd50b0152c9862b716511b451a44dda86d0dd221f49b6a05f4d16455a8d5c6ebb59426c66dacc195bf2b5eba99b302a7b4051036f8c9052f480",
+      "type": "Unknown"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/titanx/projects/judge_adventures": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:3ae8aa87cfc8c083c3ec475f46d16995": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:3ae8aa87cfc8c083c3ec475f46d16995": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/titanx/projects/judge_adventures": {
       "architecture": 3,
       "path": "/usr/bin/python3",
       "version": {
