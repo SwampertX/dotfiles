@@ -1396,7 +1396,8 @@ libmysofa0:amd64				install
 libmysqlclient-dev				install
 libmysqlclient20:amd64				install
 libmysqlcppconn-dev:amd64			install
-libmysqlcppconn7v5:amd64			install
+libmysqlcppconn7:amd64				install
+libmysqlcppconn8-2:amd64			install
 libmythes-1.2-0:amd64				install
 libnamespace-autoclean-perl			install
 libnamespace-clean-perl				install
