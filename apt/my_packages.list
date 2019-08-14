@@ -2240,6 +2240,7 @@ packagekit-tools				install
 pandoc						install
 pandoc-data					install
 pango1.0-tools					install
+parallel					install
 parted						install
 passwd						install
 patch						install
