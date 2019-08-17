@@ -134,6 +134,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # assign default windows
 assign [class="Firefox"]            $ws2
+assign [class="Nightly"]            $ws2
 assign [class="TelegramDesktop"]    $ws3
 assign [class="Slack"]              $ws3
 #assign [class="Spotify"]            $ws10
@@ -198,5 +199,5 @@ exec nm-applet
 exec ibus-daemon
 
 # Auto-start
-exec firefox
+exec firefox-trunk
 exec telegram-desktop
