@@ -193,11 +193,14 @@ bar {
 exec_always feh --bg-scale $home/Pictures/wallpaper.jpg
 bindsym $mod+shift+x exec i3lock -i $home/Pictures/lockscreen.png
 exec_always compton # --config ~/.config/compton/compton.conf
+exec redshift -t 5700:3600
 
 # Enable nice applets
 exec nm-applet
 exec ibus-daemon
+exec flameshot
 
 # Auto-start
 exec firefox-trunk
+exec telegram-desktop
 exec telegram-desktop
