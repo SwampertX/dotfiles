@@ -2847,6 +2847,7 @@ x11proto-xext-dev				install
 x11proto-xf86vidmode-dev			install
 x11proto-xinerama-dev				install
 xauth						install
+xbacklight					install
 xbitmaps					install
 xbrlapi						install
 xclip						install
