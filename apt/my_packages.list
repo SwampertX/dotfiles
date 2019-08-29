@@ -48,6 +48,7 @@ aspell						install
 aspell-en					install
 at-spi2-core					install
 atool						install
+attr						install
 aufs-tools					install
 autoconf					install
 autoconf2.13					install
@@ -806,6 +807,7 @@ libcdio17:amd64					install
 libcdio18:amd64					install
 libcdparanoia0:amd64				install
 libcdr-0.1-1:amd64				install
+libcephfs2					install
 libcgi-fast-perl				install
 libcgi-pm-perl					install
 libcharls-dev:amd64				install
@@ -1375,6 +1377,7 @@ liblcms2-2:amd64				install
 liblcms2-utils					install
 libldap-2.4-2:amd64				install
 libldap-common					install
+libldb-dev:amd64				install
 libldb1:amd64					install
 liblilv-0-0:amd64				install
 liblinear3:amd64				install
@@ -1601,6 +1604,8 @@ libparams-classify-perl				install
 libparams-util-perl				install
 libparams-validationcompiler-perl		install
 libparse-debianchangelog-perl			install
+libparse-pidl-perl:amd64			install
+libparse-yapp-perl				install
 libparted-fs-resize0:amd64			install
 libparted2:amd64				install
 libpath-tiny-perl				install
@@ -1914,16 +1919,19 @@ libsz2:amd64					install
 libtag1v5:amd64					install
 libtag1v5-vanilla:amd64				install
 libtagc0:amd64					install
+libtalloc-dev:amd64				install
 libtalloc2:amd64				install
 libtasn1-6:amd64				install
 libtasn1-6-dev:amd64				install
 libtasn1-doc					install
 libtcl8.6:amd64					install
+libtdb-dev:amd64				install
 libtdb1:amd64					install
 libteamdctl0:amd64				install
 libteckit0:amd64				install
 libtest-fatal-perl				install
 libtest-refcount-perl				install
+libtevent-dev:amd64				install
 libtevent0:amd64				install
 libtexlua52:amd64				install
 libtexlua53:amd64				install
@@ -2535,6 +2543,7 @@ python3-distro					install
 python3-distro-info				install
 python3-distupgrade				install
 python3-distutils				install
+python3-dnspython				install
 python3-entrypoints				install
 python3-gdbm:amd64				install
 python3-gi					install
@@ -2549,6 +2558,7 @@ python3-keyrings.alt				install
 python3-launchpadlib				install
 python3-lazr.restfulclient			install
 python3-lazr.uri				install
+python3-ldb					install
 python3-lib2to3					install
 python3-libvirt					install
 python3-libxml2:amd64				install
@@ -2580,6 +2590,7 @@ python3-reportlab-accel:amd64			install
 python3-requests				install
 python3-requests-unixsocket			install
 python3-rfc3339					install
+python3-samba					install
 python3-scour					install
 python3-secretstorage				install
 python3-setuptools				install
@@ -2591,6 +2602,7 @@ python3-software-properties			install
 python3-speechd					install
 python3-systemd					install
 python3-talloc					install
+python3-tdb					install
 python3-tz					install
 python3-uno					install
 python3-update-manager				install
@@ -2643,7 +2655,13 @@ ruby-xmlrpc					install
 ruby2.5						install
 rubygems-integration				install
 runit						install
+samba						install
+samba-common					install
+samba-common-bin				install
+samba-dev:amd64					install
+samba-dsdb-modules:amd64			install
 samba-libs:amd64				install
+samba-vfs-modules:amd64				install
 sane-utils					install
 sbsigntool					install
 scour						install
@@ -2665,6 +2683,7 @@ shim						install
 shim-signed					install
 skypeforlinux					install
 slack-desktop					install
+smbclient					install
 snapd						install
 software-properties-common			install
 software-properties-gtk				install
@@ -2700,6 +2719,7 @@ tar						install
 tcl						install
 tcl8.6						install
 tcpdump						install
+tdb-tools					install
 teckit						install
 telnet						install
 testng						install
