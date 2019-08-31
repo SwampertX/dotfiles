@@ -155,3 +155,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+echo "Finish your homework first." | cowsay -f unipony-smaller
