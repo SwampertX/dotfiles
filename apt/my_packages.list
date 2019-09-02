@@ -185,11 +185,15 @@ efibootmgr					install
 eject						install
 elementary-default-settings			deinstall
 elementary-icon-theme				deinstall
+elixir						install
 emacsen-common					install
 enchant						install
 eog						install
 epiphany-browser				install
 epiphany-browser-data				install
+erlang-mode					install
+erlang-solutions				install
+esl-erlang					install
 espeak-ng-data:amd64				install
 evince						install
 evince-common					install
@@ -1917,6 +1921,7 @@ libsasl2-2:amd64				install
 libsasl2-modules:amd64				install
 libsasl2-modules-db:amd64			install
 libsbc1:amd64					install
+libsctp1:amd64					install
 libsdl-image1.2:amd64				install
 libsdl1.2-dev					install
 libsdl1.2debian:amd64				install
@@ -2182,6 +2187,8 @@ libwrap0:amd64					install
 libwrap0:i386					deinstall
 libwww-perl					install
 libwww-robotrules-perl				install
+libwxbase3.0-0v5:amd64				install
+libwxgtk3.0-0v5:amd64				install
 libx11-6:amd64					install
 libx11-data					install
 libx11-dev:amd64				install
