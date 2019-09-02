@@ -105,6 +105,7 @@ console-setup-linux				install
 containerd.io					install
 contractor					install
 coreutils					install
+cowsay						install
 cpio						install
 cpp						install
 cpp-6						install
