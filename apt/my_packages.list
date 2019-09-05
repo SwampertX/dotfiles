@@ -2346,8 +2346,6 @@ linux-generic					install
 linux-generic-hwe-18.04				install
 linux-headers-4.18.0-21				install
 linux-headers-4.18.0-21-generic			install
-linux-headers-5.0.0-23				install
-linux-headers-5.0.0-23-generic			install
 linux-headers-5.0.0-25				install
 linux-headers-5.0.0-25-generic			install
 linux-headers-5.0.0-27				install
@@ -2361,7 +2359,7 @@ linux-image-5.0.0-17-generic			deinstall
 linux-image-5.0.0-19-generic			deinstall
 linux-image-5.0.0-20-generic			deinstall
 linux-image-5.0.0-21-generic			deinstall
-linux-image-5.0.0-23-generic			install
+linux-image-5.0.0-23-generic			deinstall
 linux-image-5.0.0-25-generic			install
 linux-image-5.0.0-27-generic			install
 linux-image-generic				install
@@ -2374,7 +2372,7 @@ linux-modules-5.0.0-17-generic			deinstall
 linux-modules-5.0.0-19-generic			deinstall
 linux-modules-5.0.0-20-generic			deinstall
 linux-modules-5.0.0-21-generic			deinstall
-linux-modules-5.0.0-23-generic			install
+linux-modules-5.0.0-23-generic			deinstall
 linux-modules-5.0.0-25-generic			install
 linux-modules-5.0.0-27-generic			install
 linux-modules-extra-4.18.0-15-generic		deinstall
@@ -2384,7 +2382,7 @@ linux-modules-extra-5.0.0-17-generic		deinstall
 linux-modules-extra-5.0.0-19-generic		deinstall
 linux-modules-extra-5.0.0-20-generic		deinstall
 linux-modules-extra-5.0.0-21-generic		deinstall
-linux-modules-extra-5.0.0-23-generic		install
+linux-modules-extra-5.0.0-23-generic		deinstall
 linux-modules-extra-5.0.0-25-generic		install
 linux-modules-extra-5.0.0-27-generic		install
 linux-signed-generic-hwe-18.04			install
