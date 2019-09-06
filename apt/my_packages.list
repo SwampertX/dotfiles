@@ -2772,6 +2772,7 @@ qt4-qmake					install
 qt5-gtk-platformtheme:amd64			install
 qtchooser					install
 qtcore4-l10n					install
+qtspim						install
 qttranslations5-l10n				install
 rake						install
 ranger						install
