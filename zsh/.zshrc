@@ -122,6 +122,7 @@ alias gph="git push"
 alias gst="git status"
 
 alias mkdir="mkdir -p"
+alias xclip="xclip -sel clip"
 
 # more alternatives
 alias grep="rg"
