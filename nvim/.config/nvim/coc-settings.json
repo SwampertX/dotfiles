@@ -74,7 +74,7 @@
             "filetypes": ["go"]
         }
     },
-    "coc.preferences.formatOnSaveFiletypes": ["typescriptreact", "typescript", "javascript", "javascriptreact", "css", "Markdown", "ruby"],
+    "coc.preferences.formatOnSaveFiletypes": ["typescriptreact", "typescript", "javascript", "javascriptreact", "css", "Markdown", "ruby", "java"],
     "solargraph": {
         "commandPath": "/home/titanx/.rbenv/shims/solargraph",
         "formatting": true
