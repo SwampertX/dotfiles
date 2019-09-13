@@ -186,6 +186,11 @@ eject						install
 elementary-default-settings			deinstall
 elementary-icon-theme				deinstall
 elixir						install
+emacs						install
+emacs-bin-common				install
+emacs-common					install
+emacs-el					install
+emacs-gtk					install
 emacsen-common					install
 enchant						install
 eog						install
@@ -1526,6 +1531,7 @@ liblzma-dev:amd64				install
 liblzma5:amd64					install
 liblzma5:i386					install
 liblzo2-2:amd64					install
+libm17n-0:amd64					install
 libmad0:amd64					install
 libmagic-mgc					install
 libmagic1:amd64					install
@@ -1688,6 +1694,7 @@ libosp5						install
 libossp-uuid16:amd64				install
 libostree-1-1:amd64				install
 libostyle1c2					install
+libotf0:amd64					install
 libp11-kit-dev:amd64				install
 libp11-kit0:amd64				install
 libpackage-stash-perl				install
@@ -2401,6 +2408,7 @@ lua-bitop:amd64					install
 lua-cjson:amd64					install
 lua5.2						install
 lvm2						install
+m17n-db						install
 m4						install
 make						install
 man-db						install

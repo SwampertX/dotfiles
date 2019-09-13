@@ -60,4 +60,9 @@ Plug 'tpope/vim-fugitive'
 "
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+" Orgmode, from emacs
+Plug 'jceb/vim-orgmode'
+" which needs python support
+Plug 'roxma/python-support.nvim'
+
 call plug#end()
