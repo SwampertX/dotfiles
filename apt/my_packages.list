@@ -509,7 +509,6 @@ gpg-wks-server					install
 gpgconf						install
 gpgsm						install
 gpgv						install
-gradle						install
 graphicsmagick					install
 grep						install
 grilo-plugins-0.3-base:amd64			install
