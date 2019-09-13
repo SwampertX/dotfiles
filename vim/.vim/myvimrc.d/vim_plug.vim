@@ -62,7 +62,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " Orgmode, from emacs
 Plug 'jceb/vim-orgmode'
-" which needs python support
-Plug 'roxma/python-support.nvim'
+" which needs python support, uninstall first, looks bad
+" Plug 'roxma/python-support.nvim'
 
 call plug#end()
