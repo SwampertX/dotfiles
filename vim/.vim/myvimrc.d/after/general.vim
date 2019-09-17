@@ -34,5 +34,6 @@ au BufRead * normal zR
 nnoremap j gj
 nnoremap k gk
 
+set number
 set relativenumber
 set cursorline
