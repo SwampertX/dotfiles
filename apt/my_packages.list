@@ -490,6 +490,9 @@ gnome-user-docs					install
 gnome-user-docs-zh-hans				install
 gnome-user-guide				install
 gnome-user-share				install
+gnucash						install
+gnucash-common					install
+gnucash-docs					install
 gnupg						install
 gnupg-agent					install
 gnupg-l10n					install
@@ -537,6 +540,8 @@ gtk-redshift					install
 gtk-update-icon-cache				install
 gtk2-engines-murrine:amd64			install
 gtk2-engines-pixbuf:amd64			install
+guile-2.2					install
+guile-2.2-libs:amd64				install
 gvfs:amd64					install
 gvfs-backends					install
 gvfs-bin					install
@@ -747,6 +752,12 @@ libaprutil1-ldap:amd64				install
 libapt-inst2.0:amd64				install
 libapt-pkg-perl					install
 libapt-pkg5.0:amd64				install
+libaqbanking-data				install
+libaqbanking35:amd64				install
+libaqbanking35-plugins:amd64			install
+libaqebics0:amd64				install
+libaqhbci24:amd64				install
+libaqofxconnect7:amd64				install
 libarchive-cpio-perl				install
 libarchive-zip-perl				install
 libarchive13:amd64				install
@@ -846,6 +857,7 @@ libboost-iostreams1.65.1:amd64			install
 libboost-iostreams1.67.0:amd64			install
 libboost-locale1.65.1:amd64			install
 libboost-locale1.67.0:amd64			install
+libboost-regex1.67.0:amd64			install
 libboost-system1.65.1:amd64			install
 libboost-system1.67.0:amd64			install
 libboost-thread1.65.1:amd64			install
@@ -855,6 +867,7 @@ libbrlapi0.6:amd64				install
 libbrotli1:amd64				install
 libbs2b0:amd64					install
 libbsd0:amd64					install
+libbytes-random-secure-perl			install
 libbz2-1.0:amd64				install
 libc-ares2:amd64				install
 libc-bin					install
@@ -910,7 +923,9 @@ libclass-accessor-perl				install
 libclass-c3-perl				install
 libclass-c3-xs-perl				install
 libclass-data-inheritable-perl			install
+libclass-inspector-perl				install
 libclass-method-modifiers-perl			install
+libclass-singleton-perl				install
 libclass-xsaccessor-perl			install
 libclone-perl					install
 libclucene-contribs1v5:amd64			install
@@ -937,6 +952,8 @@ libconfig-doc					install
 libconfig9:amd64				install
 libcrack2:amd64					install
 libcroco3:amd64					install
+libcrypt-random-seed-perl			install
+libcrypt-ssleay-perl				install
 libcryptsetup12:amd64				install
 libcrystalhd3:amd64				install
 libctemplate-dev				install
@@ -955,9 +972,14 @@ libdapclient6v5:amd64				install
 libdapserver7v5:amd64				install
 libdata-dump-perl				install
 libdata-optlist-perl				install
+libdate-manip-perl				install
+libdatetime-locale-perl				install
+libdatetime-perl:amd64				install
+libdatetime-timezone-perl			install
 libdatrie1:amd64				install
 libdazzle-1.0-0:amd64				install
 libdb5.3:amd64					install
+libdbi1:amd64					install
 libdbus-1-3:amd64				install
 libdbus-1-dev:amd64				install
 libdbus-glib-1-2:amd64				install
@@ -1075,8 +1097,10 @@ libfile-fcntllock-perl				install
 libfile-homedir-perl				install
 libfile-listing-perl				install
 libfile-mimeinfo-perl				install
+libfile-sharedir-perl				install
 libfile-stripnondeterminism-perl		install
 libfile-which-perl				install
+libfinance-quote-perl				install
 libflac8:amd64					install
 libflite1:amd64					install
 libfont-afm-perl				install
@@ -1282,6 +1306,8 @@ libgutenprint9					install
 libgvnc-1.0-0:amd64				install
 libgweather-3-15:amd64				install
 libgweather-common				install
+libgwenhywfar-data				install
+libgwenhywfar60:amd64				install
 libgxps2:amd64					install
 libharfbuzz-dev:amd64				install
 libharfbuzz-gobject0:amd64			install
@@ -1301,6 +1327,7 @@ libhpmud0:amd64					install
 libhtml-form-perl				install
 libhtml-format-perl				install
 libhtml-parser-perl				install
+libhtml-tableextract-perl			install
 libhtml-tagset-perl				install
 libhtml-template-perl				install
 libhtml-tree-perl				install
@@ -1389,6 +1416,7 @@ libjson-c-dev:amd64				install
 libjson-c3:amd64				install
 libjson-glib-1.0-0:amd64			install
 libjson-glib-1.0-common				install
+libjson-perl					install
 libjson-xs-perl					install
 libjsoncpp1:amd64				install
 libk5crypto3:amd64				install
@@ -1413,6 +1441,7 @@ libkrb5-3:amd64					install
 libkrb5-dev:amd64				install
 libkrb5support0:amd64				install
 libksba8:amd64					install
+libktoblzcheck1v5:amd64				install
 liblangtag-common				install
 liblangtag1:amd64				install
 liblapack-dev:amd64				install
@@ -1472,6 +1501,8 @@ libmagickwand-6.q16-3:amd64			install
 libmagickwand-6.q16-6:amd64			install
 libmail-sendmail-perl				install
 libmailtools-perl				install
+libmath-random-isaac-perl			install
+libmath-random-isaac-xs-perl			install
 libmatroska6v5:amd64				install
 libmbim-glib4:amd64				install
 libmbim-proxy					install
@@ -1581,6 +1612,7 @@ libnvidia-compute-390:i386			deinstall
 liboauth0:amd64					install
 libodbc1:amd64					install
 libodfgen-0.1-1:amd64				install
+libofx7:amd64					install
 libogdi3.2					install
 libogdi3.2-dev					install
 libogg0:amd64					install
@@ -2581,6 +2613,7 @@ python3-entrypoints				install
 python3-gdbm:amd64				install
 python3-gi					install
 python3-gi-cairo				install
+python3-gnucash					install
 python3-gpg					install
 python3-greenlet				deinstall
 python3-httplib2				install
