@@ -1797,11 +1797,17 @@ libqt5designer5:amd64				install
 libqt5gui5:amd64				install
 libqt5help5:amd64				install
 libqt5network5:amd64				install
+libqt5positioning5:amd64			install
 libqt5printsupport5:amd64			install
+libqt5qml5:amd64				install
+libqt5quick5:amd64				install
+libqt5sensors5:amd64				install
 libqt5sql5:amd64				install
 libqt5sql5-sqlite:amd64				install
 libqt5svg5:amd64				install
 libqt5test5:amd64				install
+libqt5webchannel5:amd64				install
+libqt5webkit5:amd64				install
 libqt5widgets5:amd64				install
 libqt5x11extras5:amd64				install
 libqt5xml5:amd64				install
@@ -2357,6 +2363,7 @@ mount						install
 mousetweaks					install
 mozc-data					deinstall
 mozc-server					deinstall
+mpv						install
 mscompress					install
 msr-tools					install
 mtools						install
@@ -2460,6 +2467,7 @@ perl						install
 perl-base					install
 perl-modules-5.28				install
 perl-openssl-defaults:amd64			install
+phantomjs					install
 php-apcu					deinstall
 php-apcu-bc					deinstall
 php-common					deinstall
@@ -2652,6 +2660,7 @@ python3-ptyprocess				install
 python3-pyatspi					install
 python3-pymacaroons				install
 python3-pyqt5					install
+python3-pyxattr					install
 python3-renderpm:amd64				install
 python3-reportlab				install
 python3-reportlab-accel:amd64			install
@@ -2714,6 +2723,7 @@ rfkill						install
 rsync						install
 rsyslog						install
 rtkit						install
+rtmpdump					install
 ruby						install
 ruby-did-you-mean				install
 ruby-minitest					install
@@ -3024,6 +3034,7 @@ yaru-theme-sound				install
 yasm						install
 yelp						install
 yelp-xsl					install
+youtube-dl					install
 yudit-common					install
 zathura						install
 zathura-pdf-poppler				install
