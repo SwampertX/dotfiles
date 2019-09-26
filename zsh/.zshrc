@@ -124,6 +124,7 @@ alias gst="git status"
 alias mkdir="mkdir -p"
 alias xclip="xclip -sel clip"
 
+alias hib="sudo systemctl start systemd-suspend-then-hibernate"
 # more alternatives
 alias grep="rg"
 alias find="fd"
