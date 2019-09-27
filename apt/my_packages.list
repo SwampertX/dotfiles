@@ -2744,6 +2744,7 @@ samba-libs:amd64				install
 samba-vfs-modules:amd64				install
 sane-utils					install
 sbsigntool					install
+scenebuilder					install
 scour						install
 screen-resolution-extra				install
 screenfetch					install
