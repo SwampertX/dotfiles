@@ -49,6 +49,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # PYTHON (Conda)
 export PATH="$PATH:/home/titanx/miniconda3/bin"
+# Java Fx 11
+export JAVAFX_HOME="/usr/local/lib/javafx-sdk-11.0.2"
 
 
 ##############################
