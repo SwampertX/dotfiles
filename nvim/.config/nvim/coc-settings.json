@@ -78,5 +78,6 @@
     "solargraph": {
         "commandPath": "/home/titanx/.rbenv/shims/solargraph",
         "formatting": true
-    }
+    },
+    "java.format.settings.url": "/home/titanx/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml"
 }
