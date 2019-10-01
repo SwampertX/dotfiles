@@ -1413,7 +1413,6 @@ libjpeg-turbo8:amd64				install
 libjpeg-turbo8-dev:amd64			install
 libjpeg8:amd64					install
 libjpeg8-dev:amd64				install
-libjpeg9:amd64					install
 libjs-coffeescript				install
 libjs-jquery					install
 libjs-mathjax					install
