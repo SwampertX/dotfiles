@@ -199,6 +199,7 @@ erlang-mode					install
 erlang-solutions				install
 esl-erlang					install
 espeak-ng-data:amd64				install
+ethtool						install
 evince						install
 evince-common					install
 evolution-data-server				install
@@ -2513,7 +2514,7 @@ postgresql-common				install
 postgresql-contrib				install
 powerline					install
 powermgmt-base					install
-powertop					install
+powertop					deinstall
 ppp						install
 pppconfig					install
 pppoeconf					install
@@ -2866,6 +2867,8 @@ tipa						install
 tk						install
 tk8.6						install
 tldr						install
+tlp						install
+tlp-rdw						install
 tmux						install
 tor						install
 tor-geoipdb					install
