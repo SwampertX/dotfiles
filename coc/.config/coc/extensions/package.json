@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "coc-tsserver": ">=1.4.2",
+    "coc-tsserver": ">=1.4.3",
     "coc-python": ">=1.2.6",
     "coc-json": ">=1.2.3",
     "coc-prettier": ">=1.1.8",
