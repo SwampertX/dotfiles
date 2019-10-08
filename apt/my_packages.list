@@ -640,6 +640,7 @@ iputils-tracepath				install
 ipxe-qemu					install
 ipxe-qemu-256k-compat-efi-roms			install
 irqbalance					install
+irssi						install
 isc-dhcp-client					install
 isc-dhcp-common					install
 iso-codes					install
@@ -648,6 +649,7 @@ iw						install
 java-common					install
 javascript-common				install
 kbd						install
+keepassxc					install
 kerneloops					install
 keyboard-configuration				install
 kitty						install
@@ -2264,6 +2266,8 @@ libyaml-0-2:amd64				install
 libyaml-libyaml-perl				install
 libyaml-tiny-perl				install
 libyelp0:amd64					install
+libykpers-1-1:amd64				install
+libyubikey0					install
 libzeitgeist-2.0-0:amd64			install
 libzip-dev:amd64				install
 libzip4:i386					install
@@ -2274,6 +2278,7 @@ libzstd1:amd64					install
 libzstd1:i386					install
 libzvbi-common					install
 libzvbi0:amd64					install
+libzxcvbn0:amd64				install
 libzzip-0-13:amd64				install
 light-locker					deinstall
 light-locker-settings				deinstall
@@ -2558,6 +2563,7 @@ python-certifi					install
 python-cffi-backend				install
 python-chardet					install
 python-cherrypy3				install
+python-colorama					install
 python-configparser				install
 python-crypto					install
 python-cryptography				install
@@ -2566,6 +2572,7 @@ python-cssselect				install
 python-cssutils					install
 python-dateutil					install
 python-dbus					install
+python-decorator				install
 python-dev					install
 python-dnspython				install
 python-entrypoints				install
@@ -2591,10 +2598,12 @@ python-netifaces				install
 python-numpy					install
 python-olefile					install
 python-openssl					install
+python-pathlib2					install
 python-pil:amd64				install
 python-pip					install
 python-pip-whl					install
 python-pkg-resources				install
+python-psutil					install
 python-pygments					install
 python-pyparsing				install
 python-pyqt5					install
@@ -2605,6 +2614,7 @@ python-regex					install
 python-repoze.lru				install
 python-requests					install
 python-routes					install
+python-scandir					install
 python-scour					install
 python-secretstorage				install
 python-setuptools				install
