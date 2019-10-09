@@ -49,3 +49,12 @@ main () {
 
 ##### packages
 # flameshot, peek, compton
+
+##################
+## Ubuntu Setup ##
+##################
+# sudo apt update && sudo apt upgrade -y sudo apt autoremove
+# xinit, i3, neovim, zsh
+# git clone https://github.com/swampertx/dotfiles.git
+# cd ~/dotfiles && ./install.sh
+# echo "exec i3" >> ~/.xinitrc && xstart #does not use config
