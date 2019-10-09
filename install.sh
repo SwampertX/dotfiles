@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # this file should, at the very least, populate the dot files.
-# if possible, it should install packages/clone repos that the 
+# if possible, it should install packages/clone repos that the
 #   current config requires.
 
 stow_packages () {
@@ -31,7 +31,7 @@ install_programs () {
     # ./install_cli_alternatives #alternatives: rg, fzf, fasd, fd
     # ./install_nvim #vim, nvim, plugins
     # ./install_vscodium #vscodium
-    
+
     ##### Below is dirty install #####
     sudo apt-key add ./apt/my_repo.keys
     sudo cp -R ./apt/sources.list* /etc/apt/
