@@ -183,6 +183,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym $mod+F12 exec xbacklight -inc 10 # increase screen brightness
 bindsym $mod+F11 exec xbacklight -dec 10 # decrease screen brightness
 
+bindsym Print exec flameshot full -p ~/Pictures
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -190,7 +192,7 @@ bar {
 }
 
 # Wallpaper and lockscreen
-exec_always feh --bg-scale $home/Pictures/wallpaper.jpg
+exec_always feh --bg-scale $home/Pictures/wallpapers
 bindsym $mod+shift+x exec i3lock -i $home/Pictures/lockscreen.png && echo mem > /sys/power/state
 exec_always compton # --config ~/.config/compton/compton.conf
 exec redshift -l 1.17:103.46 -t 5700:2500
