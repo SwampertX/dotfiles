@@ -1814,6 +1814,7 @@ libqt5designer5:amd64				install
 libqt5gui5:amd64				install
 libqt5help5:amd64				install
 libqt5network5:amd64				install
+libqt5opengl5:amd64				install
 libqt5positioning5:amd64			install
 libqt5printsupport5:amd64			install
 libqt5qml5:amd64				install
@@ -2967,7 +2968,7 @@ virt-manager					install
 virt-viewer					install
 virtinst					install
 virtualbox					deinstall
-virtualbox-6.0					deinstall
+virtualbox-6.0					install
 virtualbox-qt					deinstall
 vlc						install
 vlc-bin						install
