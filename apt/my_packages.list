@@ -226,6 +226,7 @@ fish						install
 fish-common					install
 flameshot					install
 flatpak						install
+flex						install
 fontconfig					install
 fontconfig-config				install
 fonts-arphic-ukai				install
@@ -1111,6 +1112,8 @@ libfile-sharedir-perl				install
 libfile-stripnondeterminism-perl		install
 libfile-which-perl				install
 libfinance-quote-perl				install
+libfl-dev:amd64					install
+libfl2:amd64					install
 libflac8:amd64					install
 libflite1:amd64					install
 libfont-afm-perl				install
