@@ -81,10 +81,11 @@
       // "args": ["-c", "/path/to/your/config.yaml"],
       "filetypes": ["vim", "eruby", "markdown"]
     },
-    "coc.preferences.formatOnSaveFiletypes": ["typescriptreact", "typescript", "javascript", "javascriptreact", "css", "markdown", "ruby"],
+    "coc.preferences.formatOnSaveFiletypes": ["typescriptreact", "typescript", "javascript", "javascriptreact", "css", "markdown", "ruby", "java"],
     "solargraph": {
         "commandPath": "/home/titanx/.rbenv/shims/solargraph",
         "formatting": true
     },
-    "java.format.settings.url": "/home/titanx/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml"
+    "java.format.settings.url": "/home/titanx/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
+    "java.format.enabled": true
 }
