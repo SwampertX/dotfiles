@@ -1,5 +1,6 @@
 " some leader key
 let mapleader=","
 
-nnoremap <leader><leader> :Files<CR>
+nnoremap <leader>F :Files<CR>
+nnoremap <leader>B :Buffers<CR>
 nnoremap <leader>c :%s/\s\+$//e<CR>
