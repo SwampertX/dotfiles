@@ -87,7 +87,7 @@
         "formatting": true
     },
     "java.format.settings.url": "/home/titanx/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
-    "java.format.settings.profile": "Eclipse",
+    "java.format.settings.profile": "Google",
     "java.format.comments.enabled": false
 
 }
