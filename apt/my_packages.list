@@ -2631,6 +2631,7 @@ octave-common					install
 octave-doc					install
 odbcinst					install
 odbcinst1debian2:amd64				install
+odrive						install
 onboard						deinstall
 opencv-data					install
 openjade					install
