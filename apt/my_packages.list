@@ -236,6 +236,8 @@ fish-common					install
 flameshot					install
 flatpak						install
 flex						install
+fltk1.3-doc					install
+fluid						install
 fontconfig					install
 fontconfig-config				install
 fonts-arphic-ukai				install
@@ -1158,8 +1160,12 @@ libfl-dev:amd64					install
 libfl2:amd64					install
 libflac8:amd64					install
 libflite1:amd64					install
+libfltk-cairo1.3:amd64				install
+libfltk-forms1.3:amd64				install
 libfltk-gl1.3:amd64				install
+libfltk-images1.3:amd64				install
 libfltk1.3:amd64				install
+libfltk1.3-dev					install
 libfont-afm-perl				install
 libfontconfig1:amd64				install
 libfontconfig1-dev:amd64			install
