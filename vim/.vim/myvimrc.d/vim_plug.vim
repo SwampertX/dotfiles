@@ -33,6 +33,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " rule them all, language!
 Plug 'sheerun/vim-polyglot'
 
+" The power of DNN
+Plug 'zxqfl/tabnine-vim'
+
 " nerd tree
 Plug 'scrooloose/nerdtree'
 
@@ -59,10 +62,5 @@ Plug 'tpope/vim-fugitive'
 
 "
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
-" Orgmode, from emacs
-Plug 'jceb/vim-orgmode'
-" which needs python support, uninstall first, looks bad
-" Plug 'roxma/python-support.nvim'
 
 call plug#end()
