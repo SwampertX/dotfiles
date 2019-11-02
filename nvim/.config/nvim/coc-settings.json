@@ -81,7 +81,7 @@
       // "args": ["-c", "/path/to/your/config.yaml"],
       "filetypes": ["vim", "eruby", "markdown"]
     },
-    "coc.preferences.formatOnSaveFiletypes": ["typescriptreact", "typescript", "javascript", "javascriptreact", "css", "markdown", "ruby"],
+    "coc.preferences.formatOnSaveFiletypes": ["typescriptreact", "typescript", "javascript", "javascriptreact", "css", "markdown", "ruby", "java"],
     "solargraph": {
         "commandPath": "/home/titanx/.rbenv/shims/solargraph",
         "formatting": true
