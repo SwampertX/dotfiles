@@ -34,7 +34,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 
 " The power of DNN
-Plug 'zxqfl/tabnine-vim'
+" Plug 'zxqfl/tabnine-vim'
 
 " nerd tree
 Plug 'scrooloose/nerdtree'
