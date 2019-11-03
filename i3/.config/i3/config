@@ -33,6 +33,7 @@ font pango:sans 10, FontAwesome 10
 floating_modifier $mod
 
 # start a terminal
+# set $TERMINAL alacritty
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
@@ -66,7 +67,7 @@ bindsym $mod+Shift+l move right
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
-bindsym $d+Shift+Up move up
+bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
