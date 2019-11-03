@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/longsleep/golang-backports/ubuntu disco main
+# deb http://ppa.launchpad.net/longsleep/golang-backports/ubuntu eoan main # disabled on upgrade to eoan
 # deb-src http://ppa.launchpad.net/longsleep/golang-backports/ubuntu disco main

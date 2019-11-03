@@ -1,1 +1,1 @@
-deb http://debian.sur5r.net/i3/ cosmic universe
+# deb http://debian.sur5r.net/i3/ disco universe # disabled on upgrade to disco
