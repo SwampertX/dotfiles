@@ -1243,7 +1243,9 @@ libglx-mesa0:amd64				install
 libglx0:amd64					install
 libgme0:amd64					install
 libgmime-3.0-0:amd64				install
+libgmp-dev:amd64				install
 libgmp10:amd64					install
+libgmpxx4ldbl:amd64				install
 libgnome-autoar-0-0:amd64			install
 libgnome-bluetooth13:amd64			install
 libgnome-desktop-3-17:amd64			install
