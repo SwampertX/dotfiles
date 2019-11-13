@@ -94,6 +94,7 @@ ccache						install
 cgroupfs-mount					install
 chafa						install
 cheese-common					install
+chromium-browser				install
 cjk-latex					install
 clang						install
 clang-8						install
@@ -509,7 +510,6 @@ gnuplot-qt					install
 golang-1.12-go					install
 golang-1.12-src					install
 golang-go					deinstall
-google-chrome-stable				install
 gperf						install
 gpg						install
 gpg-agent					install
