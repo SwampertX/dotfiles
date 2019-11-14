@@ -140,6 +140,7 @@ assign [class="TelegramDesktop"]    $ws3
 assign [class="Slack"]              $ws3
 #assign [class="Spotify"]            $ws10
 for_window [class="Spotify"] move to workspace $ws10
+assign [class="seedu.guilttrip.MainApp"] $ws4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
