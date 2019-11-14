@@ -61,6 +61,6 @@ Plug 'wellle/targets.vim'
 Plug 'tpope/vim-fugitive'
 
 "
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
