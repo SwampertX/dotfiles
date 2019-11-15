@@ -60,7 +60,6 @@ Plug 'wellle/targets.vim'
 " git wrapper, by tim pope
 Plug 'tpope/vim-fugitive'
 
-"
-" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'jceb/vim-orgmode'
 
 call plug#end()
