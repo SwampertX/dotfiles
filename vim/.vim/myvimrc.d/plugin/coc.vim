@@ -18,6 +18,10 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+nnoremap <leader>cc :CocCommand<CR>
+nnoremap <leader>ca :CocAction<CR>
+nnoremap <leader>cf :CocConfig<CR>
+
 " quicker hovering display
 set updatetime=500
 
