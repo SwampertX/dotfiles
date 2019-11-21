@@ -3027,7 +3027,7 @@ ruby-test-unit					install
 ruby-xmlrpc					install
 ruby2.5						install
 rubygems-integration				install
-runit						deinstall
+runit						install
 runit-helper					install
 rygel						install
 samba						install
@@ -3134,8 +3134,7 @@ tldr						install
 tlp						install
 tlp-rdw						install
 tmux						install
-tor						install
-tor-geoipdb					install
+tor						deinstall
 torbrowser-launcher				install
 torsocks					install
 tracker						install
