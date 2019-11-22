@@ -668,6 +668,7 @@ klibc-utils					install
 kmod						install
 krb5-locales					install
 krb5-multidev:amd64				install
+kubernetes					deinstall
 language-pack-bg-base				deinstall
 language-pack-ca-base				deinstall
 language-pack-cs-base				deinstall
