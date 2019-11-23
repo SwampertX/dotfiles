@@ -3029,7 +3029,6 @@ ruby-xmlrpc					install
 ruby2.5						install
 rubygems-integration				install
 runit						install
-runit-helper					install
 rygel						install
 samba						install
 samba-common					install
