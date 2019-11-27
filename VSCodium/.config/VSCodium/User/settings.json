@@ -14,5 +14,6 @@
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+    "C_Cpp.updateChannel": "Insiders"
 }
