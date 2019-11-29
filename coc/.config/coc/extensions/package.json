@@ -6,7 +6,7 @@
   "dependencies": {
     "coc-tsserver": ">=1.4.8",
     "coc-json": ">=1.2.4",
-    "coc-prettier": ">=1.1.10",
+    "coc-prettier": ">=1.1.11",
     "coc-solargraph": ">=1.1.3",
     "coc-snippets": ">=2.1.13",
     "coc-java": ">=1.4.5",
