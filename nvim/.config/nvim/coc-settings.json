@@ -6,9 +6,7 @@
         "javascriptreact",
         "css",
         "markdown",
-        "ruby",
-        "java",
-        "json"
+        "java"
     ],
     "languageserver": {
         "golang": {
@@ -44,5 +42,6 @@
             "settings.profile": "Google",
             "comments.enabled": false
         }
-    }
+    },
+    "python.jediEnabled": false
 }
