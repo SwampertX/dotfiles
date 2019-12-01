@@ -94,6 +94,7 @@ calibre						install
 calibre-bin					install
 capnet-assist					deinstall
 ccache						install
+ccls						install
 cgroupfs-mount					install
 chafa						install
 cheese-common					install
@@ -2249,6 +2250,8 @@ libvsqlitepp-dev				install
 libvsqlitepp3v5:amd64				install
 libvte-2.91-0:amd64				install
 libvte-2.91-common				install
+libvterm-bin					install
+libvterm0:amd64					install
 libvtk6.3					install
 libvulkan1:amd64				install
 libwacom-bin					install
