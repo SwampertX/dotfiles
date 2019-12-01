@@ -10,7 +10,8 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
             \ 'ruby' : ['solargraph', 'rubocop'],
-            \ 'python': ['black']
+            \ 'python': ['black'],
+            \ 'rust': ['rustfmt']
             \}
 
 let g:ale_fix_on_save = 1
