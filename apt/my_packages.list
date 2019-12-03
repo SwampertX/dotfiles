@@ -187,6 +187,7 @@ dpkg						install
 dpkg-dev					install
 dselect						install
 dunst						install
+dvipng						install
 dwz						install
 e2fsprogs					install
 ebtables					install
