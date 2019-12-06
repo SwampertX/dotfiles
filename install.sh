@@ -4,6 +4,19 @@
 # if possible, it should install packages/clone repos that the
 #   current config requires.
 
+# Level 1:
+# - able to stow everything
+# Level 2:
+# - CLI Tools (fish, rg, fzf, z, vim, git) working
+# Level 3
+# - WM working - with fonts, terminal ready to use
+# Level 4
+# - Daily apps working. non-exhaustive list:
+# - firefox, telegram-desktop, spotify, vscodium, emacs
+# Level 5
+# - figure a way to replicate all packages from apt
+
+
 stow_packages () {
     sudo apt install stow -y
     for pkg in $(ls)
