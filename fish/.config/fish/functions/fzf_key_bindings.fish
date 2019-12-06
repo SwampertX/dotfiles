@@ -1,0 +1,1 @@
+/home/titanx/.fzf/shell/key-bindings.fish
