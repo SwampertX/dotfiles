@@ -71,3 +71,4 @@ main () {
 # git clone https://github.com/swampertx/dotfiles.git
 # cd ~/dotfiles && ./install.sh
 # echo "exec i3" >> ~/.xinitrc && xstart #does not use config
+main
