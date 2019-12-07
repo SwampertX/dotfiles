@@ -30,7 +30,7 @@ stow_packages () {
 }
 
 update_packages () {
-    sudo apt update && sudo apt upgrade -y
+    sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 }
 
 install_programs () {
@@ -49,7 +49,7 @@ install_programs () {
     sudo apt-key add ./apt/my_repo.keys
     sudo cp -R ./apt/sources.list* /etc/apt/
     sudo apt-get update
-    sudo apt-get install dselect && sudo dselect update && sudo apt-get autoremove
+    sudo apt-get install dselect && sudo dselect update
     sudo dpkg --set-selections < ./apt/my_packages.list
     sudo apt-get dselect-upgrade -y
 }
