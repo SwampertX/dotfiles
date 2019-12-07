@@ -19,9 +19,9 @@
 
 stow_packages () {
     sudo apt install stow -y
-    for pkg in $(ls)
+    for pkg in $(echo */)
     do
-        if [ $pkg = "apt" ]
+        if [ $pkg = "apt/" ]
         then
             continue
         fi

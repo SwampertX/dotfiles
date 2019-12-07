@@ -8,11 +8,14 @@ backup_apt () {
 
 git_commit_push () {
     git add .
-    sudo -u titanx git commit -m "Automated backup using backup.sh"
-    sudo -u titanx git push origin master
+    # sudo -u titanx git commit -m "Automated backup using backup.sh"
+    # sudo -u titanx git push origin master
+    git commit -m "Automated backup using backup.sh"
+    git push origin master
 }
 
 main () {
+    cd /home/titanx/dotfiles
     backup_apt
     git_commit_push
 }
