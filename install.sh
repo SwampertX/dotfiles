@@ -16,6 +16,9 @@
 # Level 5
 # - figure a way to clean install required apps
 
+# Unstable: clean install. Uncomment to enable
+# CLEAN_INSTALL=1
+
 
 stow_packages () {
     sudo apt install stow -y
@@ -34,6 +37,24 @@ update_packages () {
 }
 
 install_programs () {
+    if $CLEAN_INSTALL; then
+        clean_install
+    else
+        dirty_install
+    fi
+}
+
+dirty_install () {
+    ##### Below is dirty install #####
+    sudo apt-key add ./apt/my_repo.keys
+    sudo cp -R ./apt/sources.list* /etc/apt/
+    sudo apt-get update
+    sudo apt-get install dselect && sudo dselect update
+    sudo dpkg --set-selections < ./apt/my_packages.list
+    sudo apt-get dselect-upgrade -y
+}
+
+clean_install () {
     # TODO: clean install
     # cd scripts # TODO: add a scripts folder
     # chmod +x *
@@ -44,18 +65,23 @@ install_programs () {
     # ./install_cli_alternatives #alternatives: rg, fzf, fasd, fd
     # ./install_nvim #vim, nvim, plugins
     # ./install_vscodium #vscodium
+    sudo add-apt-repository ppa:peek-developers/stable
+    sudo add-apt-repository ppa:mmstick76/alacritty
 
-    ##### Below is dirty install #####
-    sudo apt-key add ./apt/my_repo.keys
-    sudo cp -R ./apt/sources.list* /etc/apt/
-    sudo apt-get update
-    sudo apt-get install dselect && sudo dselect update
-    sudo dpkg --set-selections < ./apt/my_packages.list
-    sudo apt-get dselect-upgrade -y
+    cli="fish nvim ripgrep fzf fd-find"
+    daily="firefox-trunk emacs alacritty"
+    tools="flameshot compton"
 }
 
 nice_keys () {
     localectl set-x11-keymap us pc105 '' ctrl:nocaps
+}
+
+post_install () {
+    # use fish
+    chsh -s $(which fish) $(whoami)
+    # manual installations, eg Telegram desktop
+    cat post_install_info.txt
 }
 
 main () {
@@ -63,6 +89,7 @@ main () {
     update_packages
     install_programs
     stow_packages
+    post_install
 }
 
 ##### packages

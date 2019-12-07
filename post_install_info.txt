@@ -1,0 +1,2 @@
+You can download Telegram Desktop here:
+https://telegram.org/dl/desktop/linux
