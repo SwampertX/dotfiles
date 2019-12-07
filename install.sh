@@ -14,7 +14,7 @@
 # - Daily apps working. non-exhaustive list:
 # - firefox, telegram-desktop, spotify, vscodium, emacs
 # Level 5
-# - figure a way to replicate all packages from apt
+# - figure a way to clean install required apps
 
 
 stow_packages () {
