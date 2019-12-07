@@ -49,9 +49,8 @@ install_programs () {
     sudo apt-key add ./apt/my_repo.keys
     sudo cp -R ./apt/sources.list* /etc/apt/
     sudo apt-get update
-    sudo apt-get install dselect
     sudo dpkg --set-selections < ./apt/my_packages.list
-    sudo dselect
+    sudo apt-get upgrade -y
 }
 
 nice_keys () {
