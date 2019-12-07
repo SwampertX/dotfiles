@@ -80,10 +80,11 @@ install_fzf () {
 clean_install () {
     sudo add-apt-repository ppa:peek-developers/stable --yes
     sudo add-apt-repository ppa:mmstick76/alacritty --yes
+    sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
 
     install_fzf
 
-    cli="fish neovim ripgrep fd-find python3 python ranger"
+    cli="fish neovim ripgrep fd-find python3 python ranger python3-pip"
     fonts="fonts-noto fonts-font-awesome"
     daily="firefox-trunk emacs alacritty nm-tray"
     tools="flameshot compton htop zathura texlive pandoc"
