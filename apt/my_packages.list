@@ -2467,6 +2467,8 @@ linux-headers-5.3.0-19				install
 linux-headers-5.3.0-19-generic			install
 linux-headers-5.3.0-23				install
 linux-headers-5.3.0-23-generic			install
+linux-headers-5.3.0-24				install
+linux-headers-5.3.0-24-generic			install
 linux-headers-generic				install
 linux-headers-generic-hwe-18.04			install
 linux-image-4.18.0-15-generic			deinstall
@@ -2484,6 +2486,7 @@ linux-image-5.0.0-31-generic			deinstall
 linux-image-5.0.0-32-generic			deinstall
 linux-image-5.3.0-19-generic			install
 linux-image-5.3.0-23-generic			install
+linux-image-5.3.0-24-generic			install
 linux-image-generic				install
 linux-image-generic-hwe-18.04			install
 linux-libc-dev:amd64				install
@@ -2502,6 +2505,7 @@ linux-modules-5.0.0-31-generic			deinstall
 linux-modules-5.0.0-32-generic			deinstall
 linux-modules-5.3.0-19-generic			install
 linux-modules-5.3.0-23-generic			install
+linux-modules-5.3.0-24-generic			install
 linux-modules-extra-4.18.0-15-generic		deinstall
 linux-modules-extra-4.18.0-20-generic		deinstall
 linux-modules-extra-4.18.0-21-generic		install
@@ -2517,6 +2521,7 @@ linux-modules-extra-5.0.0-31-generic		deinstall
 linux-modules-extra-5.0.0-32-generic		deinstall
 linux-modules-extra-5.3.0-19-generic		install
 linux-modules-extra-5.3.0-23-generic		install
+linux-modules-extra-5.3.0-24-generic		install
 linux-signed-generic-hwe-18.04			install
 linux-sound-base				install
 llvm-8						install
