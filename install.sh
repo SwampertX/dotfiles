@@ -16,7 +16,7 @@
 # Level 5
 # - figure a way to clean install required apps
 
-# Unstable: clean install. Uncomment to enable
+# Clean install. Uncomment to disable
 # CLEAN_INSTALL=1
 
 
@@ -72,16 +72,22 @@ dirty_install () {
 # documents=(zathura zathura-pdf-poppler pandoc-bin texlive-core texlive-latexextra texlive-science words hunspell hunspell-en_GB)
 # browser=(firefox-developer-edition)
 # input_methods=(fcitx-im fcitx-configtool fcitx-googlepinyin)
+install_fzf () {
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+}
 
 clean_install () {
-    sudo add-apt-repository ppa:peek-developers/stable
-    sudo add-apt-repository ppa:mmstick76/alacritty
+    sudo add-apt-repository ppa:peek-developers/stable --yes
+    sudo add-apt-repository ppa:mmstick76/alacritty --yes
 
-    cli="fish nvim ripgrep fzf fd-find python3 python ranger"
+    install_fzf
+
+    cli="fish neovim ripgrep fd-find python3 python ranger"
     fonts="fonts-noto fonts-font-awesome"
     daily="firefox-trunk emacs alacritty nm-tray"
     tools="flameshot compton htop zathura texlive pandoc"
-    input="fcitx-im fcitx-configtool fcitx-googlepinyin"
+    input="fcitx fcitx-googlepinyin"
 
     sudo apt install $cli $fonts $daily $tools $input -y
 
