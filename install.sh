@@ -54,23 +54,39 @@ dirty_install () {
     sudo apt-get dselect-upgrade -y
 }
 
+# List of packages to install
+base=(git neovim python python-pynvim neovim-symlinks emacs stow curl diffutils man-db man-pages less)
+maintenance=(pkgfile pacman-contrib expac pacmatic lostfiles)
+monitoring=(htop sysstat acpi net-tools lsof ncdu)
+cli_utils=(bash-completion openssh tree exa xclip fish fd ripgrep fzf ranger w3m fasd bat thefuck tldr direnv expect tmux)
+# audio=(pulseaudio pulseaudio-alsa alsa-utils)
+gui=(xorg-server xorg-xinit xorg-xrdb xorg-xset xorg-xrandr gtk2 gtk3)
+fonts=(adobe-source-code-pro-fonts ttf-iosevka otf-fira-code noto-fonts noto-fonts-cjk noto-fonts-emoji otf-font-awesome nerd-fonts-source-code-pro)
+# Window manager and packages that come with most DEs but do not come with WMs
+WM=(i3-gaps i3blocks betterlockscreen compton networkmanager network-manager-applet gparted acpilight dunst eom feh udiskie)
+terminal_emulator=(kitty termite)
+launcher=(rofi rofi-dmenu rofimoji rofi-pass buku_run-git rofi-greenclip)
+gui_utils=(xdg-utils perl-file-mimeinfo desktop-file-utils sxhkd flameshot)
+misc_utils=(pass gnome-keyring unzip buku nextcloud-client bitwarden-bin)
+coding=(ctags shellcheck-static diff-so-fancy zeal)
+documents=(zathura zathura-pdf-poppler pandoc-bin texlive-core texlive-latexextra texlive-science words hunspell hunspell-en_GB)
+browser=(firefox-developer-edition)
+input_methods=(fcitx-im fcitx-configtool fcitx-googlepinyin)
+
 clean_install () {
-    # TODO: clean install
-    # cd scripts # TODO: add a scripts folder
-    # chmod +x *
-    # # you can commented out unwanted lines.
-    # ./install_zsh #zsh, oh-my-zsh, powerlevel10k, powerline, fontcache
-    # ./install_alacritty #alacritty
-    # ./install_i3wm #i3, fontawesome, i3lock, i3blocks
-    # ./install_cli_alternatives #alternatives: rg, fzf, fasd, fd
-    # ./install_nvim #vim, nvim, plugins
-    # ./install_vscodium #vscodium
     sudo add-apt-repository ppa:peek-developers/stable
     sudo add-apt-repository ppa:mmstick76/alacritty
 
-    cli="fish nvim ripgrep fzf fd-find"
-    daily="firefox-trunk emacs alacritty"
-    tools="flameshot compton"
+    cli="fish nvim ripgrep fzf fd-find python3 python ranger"
+    fonts="fonts-noto fonts-font-awesome"
+    daily="firefox-trunk emacs alacritty nm-tray"
+    tools="flameshot compton htop zathura texlive pandoc"
+    input="fcitx-im fcitx-configtool fcitx-googlepinyin"
+
+    sudo apt install $cli $fonts $daily $tools $input -y
+
+    # neovim with python support
+    pip3 install neovim
 }
 
 nice_keys () {
