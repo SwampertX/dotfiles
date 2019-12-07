@@ -3,13 +3,13 @@ nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 let g:ale_linters = {
-            \ 'ruby': ['solargraph', 'rubocop'],
+            \ 'ruby': ['rubocop'],
             \ 'python': ['black'],
             \ 'javascript': ['eslint', 'prettier'],
             \}
 
 let g:ale_fixers = {
-            \ 'ruby' : ['solargraph', 'rubocop'],
+            \ 'ruby' : ['rubocop'],
             \ 'python': ['black'],
             \ 'rust': ['rustfmt']
             \}
