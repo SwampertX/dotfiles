@@ -54,7 +54,12 @@ install_programs () {
     sudo dselect
 }
 
+nice_keys () {
+    localectl set-x11-keymap us pc105 '' ctrl:nocaps
+}
+
 main () {
+    nice_keys
     update_packages
     install_programs
     stow_packages
