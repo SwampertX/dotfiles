@@ -72,6 +72,7 @@ dirty_install () {
 # documents=(zathura zathura-pdf-poppler pandoc-bin texlive-core texlive-latexextra texlive-science words hunspell hunspell-en_GB)
 # browser=(firefox-developer-edition)
 # input_methods=(fcitx-im fcitx-configtool fcitx-googlepinyin)
+
 install_fzf () {
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install --all
@@ -90,8 +91,6 @@ clean_install () {
     # sudo add-apt-repository ppa:mmstick76/alacritty --yes
     sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
 
-    install_fzf
-    install_alacritty
 
     cli="fish neovim ripgrep fd-find python3 python ranger python3-pip"
     fonts="fonts-noto fonts-font-awesome fonts-powerline fonts-hack-ttf"
@@ -100,9 +99,14 @@ clean_install () {
     input="fcitx fcitx-googlepinyin"
 
     sudo apt install $cli $fonts $daily $tools $input -y
+    sudo apt --fix-broken install
+    sudo apt install $cli $fonts $daily $tools $input -y
+
+    install_fzf
+    install_alacritty
 
     # neovim with python support
-    # pip3 install neovim
+    pip3 install neovim
 }
 
 nice_keys () {
@@ -112,16 +116,16 @@ nice_keys () {
 post_install () {
     # use fish
     chsh -s $(which fish) $(whoami)
-    # manual installations, eg Telegram desktop
-    # cat post_install_info.txt
+    # use i3
     echo "exec i3" > ~/.xinitrc && startx
+    # TODO: use nvim as vim
 }
 
 main () {
-    nice_keys
-    update_packages
-    install_programs
-    stow_packages
+    nice_keys &&
+    update_packages &&
+    install_programs &&
+    stow_packages &&
     post_install
 }
 

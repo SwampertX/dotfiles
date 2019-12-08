@@ -20,11 +20,11 @@ match ExtraWhitespace /\s\+$/
 
 " sane cursor
 " default
-" set guicursor=n-v-c-sm:block
-" set guicursor+=i-ci-ve:ver25
-" set guicursor+=r-cr-o:hor20
+set guicursor=n-v-c-sm:block
+set guicursor+=i-ci-ve:ver25
+set guicursor+=r-cr-o:hor20
 " just block
-set guicursor=
+" set guicursor=
 
 set confirm
 set hidden
