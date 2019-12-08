@@ -110,6 +110,7 @@ clean_install () {
 }
 
 nice_keys () {
+    echo "Stage 1: Map Caps Lock to Ctrl"
     localectl set-x11-keymap us pc105 '' ctrl:nocaps
 }
 
