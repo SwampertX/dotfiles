@@ -84,7 +84,7 @@ install_fzf () {
 }
 
 install_alacritty () {
-    wget -O alacritty.deb "https://github.com/jwilm/alacritty/releases/download/v0.4.0/Alacritty-v0.4.0-ubuntu_18_04_amd64.deb"
+    curl "https://github.com/jwilm/alacritty/releases/download/v0.4.0/Alacritty-v0.4.0-ubuntu_18_04_amd64.deb" -o alacritty.deb
     sudo dpkg -i alacritty.deb
     rm alacritty.deb
 }
