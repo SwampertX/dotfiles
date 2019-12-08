@@ -114,6 +114,8 @@ post_install () {
     chsh -s $(which fish) $(whoami)
     # manual installations, eg Telegram desktop
     # cat post_install_info.txt
+    echo "exec i3" > ~/.xinitrc
+    startx
 }
 
 main () {
