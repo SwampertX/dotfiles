@@ -5,7 +5,7 @@
 
 nice_keys () {
     echo "Stage 1: Map Caps Lock to Ctrl"
-    localectl set-x11-keymap us pc105 '' ctrl:nocaps
+    sudo localectl set-x11-keymap us pc105 '' ctrl:nocaps
 }
 
 fix_broken () {
@@ -85,7 +85,7 @@ stow_packages () {
 post_install () {
     echo "Stage 5: Post installation phase."
     # use fish
-    chsh -s $(which fish) $(whoami)
+    sudo chsh -s $(which fish) $(whoami)
     # use i3
     echo "exec i3" > ~/.xinitrc && startx
     # TODO: use nvim as vim
