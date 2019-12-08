@@ -6,6 +6,7 @@ let g:ale_linters = {
             \ 'ruby': ['rubocop'],
             \ 'python': ['black'],
             \ 'javascript': ['eslint', 'prettier'],
+            \ 'bash': ['eslint', 'prettier'],
             \}
 
 let g:ale_fixers = {

@@ -86,14 +86,14 @@ clean_install () {
 
     cli="fish neovim ripgrep fd-find python3 python ranger python3-pip"
     fonts="fonts-noto fonts-font-awesome"
-    daily="firefox-trunk emacs alacritty nm-tray"
+    daily="firefox-trunk emacs alacritty nm-tray xinit"
     tools="flameshot compton htop zathura texlive pandoc"
     input="fcitx fcitx-googlepinyin"
 
     sudo apt install $cli $fonts $daily $tools $input -y
 
     # neovim with python support
-    pip3 install neovim
+    # pip3 install neovim
 }
 
 nice_keys () {
