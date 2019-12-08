@@ -77,6 +77,7 @@ stow_packages () {
         then
             rm -rf ~/.config/fish
             stow $pkg --restow
+            echo "fisher" | fish
             install_fzf
         else
             stow $pkg --restow
