@@ -41,12 +41,6 @@ install_fzf () {
     ~/.fzf/install --all
 }
 
-install_alacritty () {
-    curl "https://github.com/jwilm/alacritty/releases/download/v0.4.0/Alacritty-v0.4.0-ubuntu_18_04_amd64.deb" -o alacritty.deb
-    sudo dpkg -i alacritty.deb
-    rm alacritty.deb
-}
-
 clean_install () {
     sudo add-apt-repository ppa:peek-developers/stable --yes
     sudo add-apt-repository ppa:mmstick76/alacritty --yes
@@ -66,6 +60,8 @@ clean_install () {
 
     # neovim with python support
     pip3 install neovim
+    # tldr
+    sudo snap install tldr
 }
 
 stow_packages () {
@@ -77,8 +73,14 @@ stow_packages () {
         if [ $pkg = "apt/" ]
         then
             continue
+        elif [ $pkg = "fish/" ]
+        then
+            rm -rf ~/.config/fish
+            stow $pkg --restow
+            install_fzf
+        else
+            stow $pkg --restow
         fi
-        stow $pkg --restow
     done
 }
 
@@ -86,9 +88,10 @@ post_install () {
     echo "Stage 5: Post installation phase."
     # use fish
     sudo chsh -s $(which fish) $(whoami)
+    # use nvim as vim
+    sudo update-alternatives --config vim
     # use i3
     echo "exec i3" > ~/.xinitrc && startx
-    # TODO: use nvim as vim
 }
 
 main () {
