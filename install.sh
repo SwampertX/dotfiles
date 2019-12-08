@@ -21,6 +21,8 @@
 
 
 stow_packages () {
+    echo "Stage 4: stowing packages."
+    fix_broken
     sudo apt install stow -y
     for pkg in $(echo */)
     do
@@ -33,10 +35,13 @@ stow_packages () {
 }
 
 update_packages () {
+    "Stage 2: Update existing packages"
+    fix_broken
     sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 }
 
 install_programs () {
+    echo "Stage 3: installing packages."
     if $CLEAN_INSTALL; then
         clean_install
     else
@@ -98,8 +103,7 @@ clean_install () {
     tools="flameshot compton htop zathura texlive pandoc"
     input="fcitx fcitx-googlepinyin"
 
-    sudo apt install $cli $fonts $daily $tools $input -y
-    sudo apt --fix-broken install
+    fix_broken
     sudo apt install $cli $fonts $daily $tools $input -y
 
     install_fzf
@@ -109,12 +113,17 @@ clean_install () {
     pip3 install neovim
 }
 
+fix_broken () {
+    sudo apt --fix-broken install --yes
+}
+
 nice_keys () {
     echo "Stage 1: Map Caps Lock to Ctrl"
     localectl set-x11-keymap us pc105 '' ctrl:nocaps
 }
 
 post_install () {
+    echo "Stage 5: Post installation phase."
     # use fish
     chsh -s $(which fish) $(whoami)
     # use i3
