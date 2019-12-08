@@ -93,13 +93,13 @@ clean_install () {
     # 08/12/19 - alacritty eoan package has terminfo that clashes
     #   with ncurses. trying manual download
     sudo add-apt-repository ppa:peek-developers/stable --yes
-    # sudo add-apt-repository ppa:mmstick76/alacritty --yes
+    sudo add-apt-repository ppa:mmstick76/alacritty --yes
     sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
 
 
     cli="fish neovim ripgrep fd-find python3 python ranger python3-pip"
     fonts="fonts-noto fonts-font-awesome fonts-powerline fonts-hack-ttf"
-    daily="i3 i3blocks firefox-trunk emacs nm-tray xinit"
+    daily="i3 i3blocks firefox-trunk emacs nm-tray xinit alacritty"
     tools="flameshot compton htop zathura texlive pandoc"
     input="fcitx fcitx-googlepinyin"
 
@@ -107,7 +107,7 @@ clean_install () {
     sudo apt install $cli $fonts $daily $tools $input -y
 
     install_fzf
-    install_alacritty
+    # install_alacritty
 
     # neovim with python support
     pip3 install neovim
