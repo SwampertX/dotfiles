@@ -77,16 +77,25 @@ install_fzf () {
     ~/.fzf/install --all
 }
 
+install_alacritty () {
+    wget -O alacritty.deb "https://github.com/jwilm/alacritty/releases/download/v0.4.0/Alacritty-v0.4.0-ubuntu_18_04_amd64.deb"
+    sudo dpkg -i alacritty.deb
+    rm alacritty.deb
+}
+
 clean_install () {
+    # 08/12/19 - alacritty eoan package has terminfo that clashes
+    #   with ncurses. trying manual download
     sudo add-apt-repository ppa:peek-developers/stable --yes
-    sudo add-apt-repository ppa:mmstick76/alacritty --yes
+    # sudo add-apt-repository ppa:mmstick76/alacritty --yes
     sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa --yes
 
     install_fzf
+    install_alacritty
 
     cli="fish neovim ripgrep fd-find python3 python ranger python3-pip"
     fonts="fonts-noto fonts-font-awesome"
-    daily="firefox-trunk emacs alacritty nm-tray xinit"
+    daily="i3 i3blocks firefox-trunk emacs nm-tray xinit"
     tools="flameshot compton htop zathura texlive pandoc"
     input="fcitx fcitx-googlepinyin"
 
