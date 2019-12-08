@@ -50,7 +50,7 @@ clean_install () {
     cli="fish neovim ripgrep fd-find python3 python ranger python3-pip"
     fonts="fonts-noto fonts-font-awesome fonts-powerline fonts-hack-ttf"
     daily="i3 i3blocks firefox-trunk emacs nm-tray xinit alacritty telegram-desktop"
-    tools="flameshot compton htop zathura texlive pandoc"
+    tools="flameshot compton htop zathura texlive pandoc feh"
     input="fcitx fcitx-googlepinyin"
 
     fix_broken

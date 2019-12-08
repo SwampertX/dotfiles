@@ -1,0 +1,50 @@
+rename profile.png
+move
+move 
+rename cups_home
+rename cups_home.png
+rename cups_ppd.png
+rename cups_generic.png
+rename cups_lpd.png
+rename cups_lpd_ip.png
+rename cups_printer_name.png
+rename cups_ppd1.png
+rename cups_ppd2.png
+rename cups_printer_status.png
+rename cups_default_options.png
+sort time
+open_with zathura
+rename cs1010e_t6.pdf
+unzip
+help
+cd .
+search resume
+search png
+search liber
+search 08
+delete 
+rename 
+rename prime_spiral_zoom_in.png
+
+rename prime_spiral_zoom_out.png
+rename prime_number_galaxy.png
+rename prime_number_rays.png
+search nusco
+search poster
+search piazzo
+search lib
+search cla
+search docum
+search 
+search analysis
+search nus
+cd
+search Assign
+sort 
+search tut08
+search gainnode
+search media
+search web
+search bit
+open_with 
+delete
