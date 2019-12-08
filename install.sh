@@ -94,7 +94,7 @@ clean_install () {
     install_alacritty
 
     cli="fish neovim ripgrep fd-find python3 python ranger python3-pip"
-    fonts="fonts-noto fonts-font-awesome"
+    fonts="fonts-noto fonts-font-awesome fonts-powerline fonts-hack-ttf"
     daily="i3 i3blocks firefox-trunk emacs nm-tray xinit"
     tools="flameshot compton htop zathura texlive pandoc"
     input="fcitx fcitx-googlepinyin"
@@ -114,8 +114,7 @@ post_install () {
     chsh -s $(which fish) $(whoami)
     # manual installations, eg Telegram desktop
     # cat post_install_info.txt
-    echo "exec i3" > ~/.xinitrc
-    startx
+    echo "exec i3" > ~/.xinitrc && startx
 }
 
 main () {
@@ -132,9 +131,4 @@ main () {
 ##################
 ## Ubuntu Setup ##
 ##################
-# sudo apt update && sudo apt upgrade -y sudo apt autoremove
-# xinit, i3, neovim, zsh
-# git clone https://github.com/swampertx/dotfiles.git
-# cd ~/dotfiles && ./install.sh
-# echo "exec i3" >> ~/.xinitrc && xstart #does not use config
 main
