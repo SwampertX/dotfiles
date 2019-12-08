@@ -95,7 +95,7 @@ main () {
     nice_keys &&
     update_packages &&
     install_programs &&
-    stow_packages &&
+    stow_packages
     post_install
 }
 
