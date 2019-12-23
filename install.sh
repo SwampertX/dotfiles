@@ -41,6 +41,10 @@ install_fzf () {
     ~/.fzf/install --all
 }
 
+install_bls () {
+    sudo ./betterlockscreen.sh
+}
+
 clean_install () {
     sudo add-apt-repository ppa:peek-developers/stable --yes
     sudo add-apt-repository ppa:mmstick76/alacritty --yes
@@ -62,6 +66,8 @@ clean_install () {
     pip3 install neovim
     # tldr
     sudo snap install tldr
+    # betterlockscreen
+    install_bls
 }
 
 post_install () {
