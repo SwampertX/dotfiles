@@ -67,7 +67,7 @@ clean_install () {
     # tldr
     sudo snap install tldr
     # betterlockscreen
-    install_bls
+    # install_bls
 }
 
 post_install () {
