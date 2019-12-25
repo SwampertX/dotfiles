@@ -15,6 +15,8 @@ abbr -a py "python"
 abbr -a py3 "python3"
 abbr -a xclip "xclip -sel clip"
 
+abbr -a doom "~/.emacs.d/bin/doom"
+
 if not functions -q fisher
     set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
     curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
