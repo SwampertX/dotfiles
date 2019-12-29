@@ -1,5 +1,3 @@
-rename profile.png
-move
 move 
 rename cups_home
 rename cups_home.png
@@ -25,7 +23,6 @@ search 08
 delete 
 rename 
 rename prime_spiral_zoom_in.png
-
 rename prime_spiral_zoom_out.png
 rename prime_number_galaxy.png
 rename prime_number_rays.png
@@ -48,3 +45,6 @@ search web
 search bit
 open_with 
 delete
+search sig
+
+search signature
