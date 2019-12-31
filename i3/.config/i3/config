@@ -178,9 +178,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
 
 # Sreen brightness controls
 bindsym $mod+F12 exec xbacklight -inc 10 # increase screen brightness
@@ -197,7 +197,7 @@ bar {
 # Wallpaper and lockscreen
 exec_always feh --randomize --bg-scale $config/wallpapers/*
 # bindsym $mod+shift+x exec i3lock -i $config/lockscreen.png && echo mem > /sys/power/state
-bindsym $mod+shift+x exec $config/lockscreen/randomlock.fish && echo mem > /sys/power/state
+bindsym $mod+shift+x exec $config/lockscreen/randomlock.fish
 exec_always compton # --config ~/.config/compton/compton.conf
 exec redshift -l 1.17:103.46 -t 5700:2500
 

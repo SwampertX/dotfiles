@@ -30,3 +30,6 @@ _Update: (08 Dec 2019):_ Tried and tested on **Ubuntu 19.10**. Only requires sud
 ### TODOs
 
 - [ ] `update-alternative`: set nvim as default vim
+- [ ] create a server script (no sudo access, only cli stuff)
+- [ ] failure tolerance (not rerunning stuff again)
+- [ ] auto deal with cron scripts (with setup clonning etc)
