@@ -1,6 +1,3 @@
-move 
-rename cups_home
-rename cups_home.png
 rename cups_ppd.png
 rename cups_generic.png
 rename cups_lpd.png
@@ -10,7 +7,6 @@ rename cups_ppd1.png
 rename cups_ppd2.png
 rename cups_printer_status.png
 rename cups_default_options.png
-sort time
 open_with zathura
 rename cs1010e_t6.pdf
 unzip
@@ -37,14 +33,18 @@ search analysis
 search nus
 cd
 search Assign
-sort 
 search tut08
 search gainnode
 search media
 search web
 search bit
 open_with 
-delete
 search sig
 
 search signature
+open_with j
+search cs1101s
+sort time
+sort 
+help sort
+delete
