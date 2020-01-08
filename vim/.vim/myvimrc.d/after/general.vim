@@ -18,14 +18,6 @@ colorscheme gruvbox
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
-" sane cursor
-" default
-set guicursor=n-v-c-sm:block
-set guicursor+=i-ci-ve:ver25
-set guicursor+=r-cr-o:hor20
-" just block
-" set guicursor=
-
 set confirm
 set hidden
 set cmdheight=2
