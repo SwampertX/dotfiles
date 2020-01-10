@@ -14,6 +14,7 @@ abbr -a gb "git branch"
 abbr -a py "python"
 abbr -a py3 "python3"
 abbr -a xclip "xclip -sel clip"
+abbr -a mkdir "mkdir -p"
 
 abbr -a doom "~/.emacs.d/bin/doom"
 

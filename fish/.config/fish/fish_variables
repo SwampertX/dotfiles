@@ -23,6 +23,7 @@ SETUVAR _fish_abbr_gpl:git\x20pull
 SETUVAR _fish_abbr_gpo:git\x20push\x20origin\x20\x2du
 SETUVAR _fish_abbr_grb:git\x20rebase
 SETUVAR _fish_abbr_gst:git\x20status
+SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
 SETUVAR _fish_abbr_py:python
 SETUVAR _fish_abbr_py3:python3
 SETUVAR _fish_abbr_xclip:xclip\x20\x2dsel\x20clip
