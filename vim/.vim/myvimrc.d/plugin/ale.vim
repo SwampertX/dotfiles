@@ -8,12 +8,14 @@ let g:ale_linters = {
             \ 'python': ['black'],
             \ 'javascript': ['eslint', 'prettier'],
             \ 'bash': ['eslint', 'prettier'],
+            \ 'markdown': ['alex'],
             \}
 
 let g:ale_fixers = {
             \ 'ruby' : ['rubocop'],
             \ 'python': ['black'],
-            \ 'rust': ['rustfmt']
+            \ 'rust': ['rustfmt'],
+            \ 'markdown': ['alex'],
             \}
 
 let g:ale_fix_on_save = 1
