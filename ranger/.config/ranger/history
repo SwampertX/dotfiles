@@ -1,6 +1,3 @@
-rename cups_ppd.png
-rename cups_generic.png
-rename cups_lpd.png
 rename cups_lpd_ip.png
 rename cups_printer_name.png
 rename cups_ppd1.png
@@ -30,7 +27,6 @@ search cla
 search docum
 search 
 search analysis
-search nus
 cd
 search Assign
 search tut08
@@ -44,7 +40,11 @@ search sig
 search signature
 open_with j
 search cs1101s
-sort time
 sort 
 help sort
+sort time
+sort time asc
+sort time desc
+search nus
 delete
+rename y2s2_v2.ics

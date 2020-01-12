@@ -11,7 +11,7 @@
         :n "S-j" #'org-shiftdown
         )
   (setq org-todo-keywords '((sequence "TODO(t)" "INPROGRESS(i)" "WAITING(w)" "|" "DONE(d!)" "CANCELLED(c@)"))
-        org-agenda-files (list "~/projects/org/")
-        org-directory "~/projects/org/"
+        org-agenda-files (list "~/Dropbox/org/")
+        org-directory "~/Dropbox/org/"
         org-log-done-with-time t)
   )
