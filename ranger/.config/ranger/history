@@ -27,7 +27,6 @@ search cla
 search docum
 search 
 search analysis
-cd
 search Assign
 search tut08
 search gainnode
@@ -45,6 +44,7 @@ help sort
 sort time
 sort time asc
 sort time desc
-delete
 rename y2s2_v2.ics
 search nus
+delete
+cd
