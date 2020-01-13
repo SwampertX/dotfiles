@@ -45,6 +45,6 @@ help sort
 sort time
 sort time asc
 sort time desc
-search nus
 delete
 rename y2s2_v2.ics
+search nus
