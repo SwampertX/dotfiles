@@ -33,7 +33,6 @@ search gainnode
 search media
 search web
 search bit
-open_with 
 search sig
 
 search signature
@@ -45,6 +44,7 @@ sort time
 sort time asc
 sort time desc
 rename y2s2_v2.ics
-search nus
 delete
 cd
+search nus
+open_with 
