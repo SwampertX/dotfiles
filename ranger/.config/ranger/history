@@ -46,5 +46,5 @@ sort time desc
 rename y2s2_v2.ics
 delete
 cd
-search nus
 open_with 
+search nus
