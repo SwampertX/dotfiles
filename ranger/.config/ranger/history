@@ -44,7 +44,7 @@ sort time
 sort time asc
 sort time desc
 rename y2s2_v2.ics
-delete
 cd
 open_with 
 search nus
+delete
