@@ -10,6 +10,6 @@
     "coc-solargraph": ">=1.1.4",
     "coc-snippets": ">=2.1.17",
     "coc-rls": ">=1.1.4",
-    "coc-python": ">=1.2.6"
+    "coc-python": ">=1.2.7"
   }
 }
