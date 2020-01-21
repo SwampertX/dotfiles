@@ -1,6 +1,3 @@
-rename cups_lpd_ip.png
-rename cups_printer_name.png
-rename cups_ppd1.png
 rename cups_ppd2.png
 rename cups_printer_status.png
 rename cups_default_options.png
@@ -47,4 +44,7 @@ rename y2s2_v2.ics
 cd
 open_with 
 delete
+shell 
 search nus
+search drop
+search comp
