@@ -27,6 +27,7 @@ SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
 SETUVAR _fish_abbr_py:python
 SETUVAR _fish_abbr_py3:python3
 SETUVAR _fish_abbr_xclip:xclip\x20\x2dsel\x20clip
+SETUVAR _fish_abbr_zathura:zathura\x20\x2d\x2dfork
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:b294bb
