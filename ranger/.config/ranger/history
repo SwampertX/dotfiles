@@ -43,8 +43,8 @@ cd
 shell 
 search drop
 search comp
-search nus
 delete
 search dra
 open_with 
 search us
+search nus
