@@ -16,6 +16,7 @@ abbr -a py3 "python3"
 abbr -a xclip "xclip -sel clip"
 abbr -a mkdir "mkdir -p"
 abbr -a zathura "zathura --fork"
+abbr -a ssh "env TERM=xterm ssh"
 
 abbr -a doom "~/.emacs.d/bin/doom"
 
