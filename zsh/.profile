@@ -71,6 +71,7 @@ export PAGER="less"
 export EDITOR="nvim"
 export PKG_CONFIG="/usr/bin/pkg-config"
 export TERM="xterm-256color"
+export QT_IM_MODULE="ibus"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 

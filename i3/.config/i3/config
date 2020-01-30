@@ -209,4 +209,4 @@ exec dropbox start
 
 # Auto-start
 exec firefox-trunk
-exec telegram-desktop
+exec telegram
