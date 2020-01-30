@@ -72,6 +72,8 @@ export EDITOR="nvim"
 export PKG_CONFIG="/usr/bin/pkg-config"
 export TERM="xterm-256color"
 export QT_IM_MODULE="ibus"
+unset QT_STYLE_OVERRIDE
+export QT_QPA_PLATFORMTHEME="qt5ct"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 
