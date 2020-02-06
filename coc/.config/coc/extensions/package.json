@@ -1,15 +1,11 @@
 {
-  "name": "extensions",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
   "dependencies": {
-    "coc-tsserver": ">=1.4.9",
     "coc-json": ">=1.2.4",
     "coc-prettier": ">=1.1.11",
-    "coc-solargraph": ">=1.1.5",
-    "coc-snippets": ">=2.1.18",
+    "coc-python": ">=1.2.7",
     "coc-rls": ">=1.1.4",
-    "coc-python": ">=1.2.7"
+    "coc-snippets": ">=2.1.18",
+    "coc-solargraph": ">=1.1.5",
+    "coc-tsserver": ">=1.4.9"
   }
 }

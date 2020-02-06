@@ -54,11 +54,12 @@ let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
 
-Plug 'sirver/ultisnips'
-let g:UltiSnipsExpandTrigger = '<tab>'
-let g:UltiSnipsJumpForwardTrigger = '<tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-let g:UltiSnipsSnippetDirectories=["~/.vim/myvimrc.d/ultisnips"]
+" Use coc-snippets instead
+" Plug 'sirver/ultisnips'
+" let g:UltiSnipsSnippetDirectories=["~/.vim/myvimrc.d/ultisnips"]
+" let g:UltiSnipsExpandTrigger = '<c-e>'
+" let g:UltiSnipsJumpForwardTrigger = '<alt-f>'
+" let g:UltiSnipsJumpBackwardTrigger = '<alt-f>'
 
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'} " for VimPlug
 set conceallevel=2
