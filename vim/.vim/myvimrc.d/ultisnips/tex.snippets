@@ -71,3 +71,43 @@ snippet ali "Align" bA
 	${1:${VISUAL}}
 .\end{align*}
 endsnippet
+
+snippet '([A-Za-z])(\d)' "auto subscript" wrA
+`!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
+endsnippet
+
+snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
+`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
+endsnippet
+
+snippet sr "^2" iA
+^2
+endsnippet
+
+snippet cb "^3" iA
+^3
+endsnippet
+
+snippet compl "complement" iA
+^{c}
+endsnippet
+
+snippet td "superscript" iA
+^{$1}$0
+endsnippet
+
+snippet box "Box"
+\fbox{$1} $0
+endsnippet
+
+snippet bld "Bold"
+\textbf{$1} $0
+endsnippet
+
+snippet itl "Italics"
+\textit{$1} $0
+endsnippet
+
+snippet udl "Underline"
+\underline{$1} $0
+endsnippet
