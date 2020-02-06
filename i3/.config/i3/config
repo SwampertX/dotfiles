@@ -34,20 +34,21 @@ set $purple #b16286
 set $aqua #689d68
 set $gray #a89984
 set $darkgray #1d2021
+set $white #ebdbb2
 
-# green gruvbox
-# class                 border|backgr|text|indicator|child_border
-client.focused          $green $green $darkgray $purple $darkgray
-client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
-client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
-client.urgent           $red $red $white $red $red
-
-# # blue gruvbox
+# # green gruvbox
 # # class                 border|backgr|text|indicator|child_border
-# client.focused          $blue $blue $darkgray $purple $darkgray
+# client.focused          $green $green $darkgray $purple $darkgray
 # client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
 # client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
 # client.urgent           $red $red $white $red $red
+
+# blue gruvbox
+# class                 border|backgr|text|indicator|child_border
+client.focused          $blue $blue $white $purple $darkgray
+client.focused_inactive $darkgray $darkgray $yellow $purple $darkgray
+client.unfocused        $darkgray $darkgray $yellow $purple $darkgray
+client.urgent           $red $red $white $red $red
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
