@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "One Dark Pro Bold",
+    "workbench.colorTheme": "Gruvbox Dark (Hard)",
     "editor.fontFamily": "'Droid Sans Mono for Powerline', 'monospace', monospace, 'Droid Sans Fallback'",
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
