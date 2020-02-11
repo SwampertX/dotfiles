@@ -79,4 +79,6 @@ Plug 'tpope/vim-fugitive'
 
 Plug 'jceb/vim-orgmode'
 
+Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
