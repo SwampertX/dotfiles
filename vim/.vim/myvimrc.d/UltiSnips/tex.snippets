@@ -51,13 +51,17 @@ snippet beg "begin{} / end{}" bA
 \\end{$1}
 endsnippet
 
+# snippet ilm "Math" wA
+# $${1}$`!p
+# if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+# 	snip.rv = ' '
+# else:
+# 	snip.rv = ''
+# `$2
+# endsnippet
+
 snippet ilm "Math" wA
-$${1}$`!p
-if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
-	snip.rv = ' '
-else:
-	snip.rv = ''
-`$2
+$${1}$${2}
 endsnippet
 
 snippet mp "Math" wA
@@ -129,4 +133,10 @@ snippet enum "Enumerate"
 	$1
 	\item{$0}
 \end{enumerate}
+endsnippet
+
+snippet bb "Blackboard" wA
+\mathbb{$1} $0
+endsnippet
+
 endsnippet
