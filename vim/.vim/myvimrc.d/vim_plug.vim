@@ -36,12 +36,6 @@ Plug 'sheerun/vim-polyglot'
 " The power of DNN
 " Plug 'zxqfl/tabnine-vim'
 
-" nerd tree
-Plug 'scrooloose/nerdtree'
-
-" one dark?
-Plug 'joshdick/onedark.vim'
-
 " gruvbox?
 Plug 'morhetz/gruvbox'
 
@@ -81,4 +75,5 @@ Plug 'jceb/vim-orgmode'
 
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'preservim/nerdtree'
 call plug#end()
