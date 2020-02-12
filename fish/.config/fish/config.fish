@@ -27,3 +27,4 @@ if not functions -q fisher
 end
 
 set -a PATH .
+set FZF_DEFAULT_COMMAND 'fd'
