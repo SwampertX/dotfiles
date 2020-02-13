@@ -20,6 +20,7 @@ snippet template "Basic template" b
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{amsmath, amssymb}
+\usepackage{minted}
 
 
 % figure support
@@ -43,6 +44,12 @@ snippet template "Basic template" b
 	\maketitle
 	$0
 \end{document}
+endsnippet
+
+snippet code "Code Block"
+\begin{minted}{$1}
+	$0
+\end{minted}
 endsnippet
 
 snippet beg "begin{} / end{}" bA
