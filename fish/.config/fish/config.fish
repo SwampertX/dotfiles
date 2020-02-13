@@ -28,3 +28,5 @@ end
 
 set -a PATH .
 set FZF_DEFAULT_COMMAND 'fd'
+
+thefuck --alias | source
