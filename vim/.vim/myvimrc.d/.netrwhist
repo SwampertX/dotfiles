@@ -1,0 +1,3 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/titanx/nus/ivle/y2s2/CS2106/Lab Assignments/Lab2/L2_demo'
