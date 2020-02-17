@@ -1,7 +1,12 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
-(set-face-attribute 'default nil :height 120)
+(setq doom-theme 'doom-gruvbox
+      doom-font (font-spec :family "Hack" :size 15)
+      ;; doom-unicode-font (font-spec :family "Noto" :size 14)
+      )
+
+;; (set-face-attribute 'default nil :height 120)
 
 (after! org
   (map! :map org-mode-map
