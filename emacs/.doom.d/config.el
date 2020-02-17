@@ -3,6 +3,8 @@
 ;; Place your private configuration here
 (setq doom-theme 'doom-gruvbox
       doom-font (font-spec :family "Hack" :size 15)
+      user-full-name "Tan Yee Jian"
+      user-mail-address "tanyeejian@gmail.com"
       ;; doom-unicode-font (font-spec :family "Noto" :size 14)
       )
 
@@ -18,5 +20,6 @@
   (setq org-todo-keywords '((sequence "TODO(t)" "INPROGRESS(i)" "WAITING(w)" "|" "DONE(d!)" "CANCELLED(c@)"))
         org-agenda-files (list "~/Dropbox/org/")
         org-directory "~/projects/org/"
-        org-log-done-with-time t)
+        org-log-done-with-time t
+        )
   )
