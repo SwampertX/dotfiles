@@ -24,4 +24,9 @@
         )
   )
 
-(setq rust-format-on-save t)
+(after! rust
+  (setq ;; rustic-lsp-format t
+        rustic-format-on-save t
+        ;; rustic-format-trigger 'on-save)
+        )
+  )
