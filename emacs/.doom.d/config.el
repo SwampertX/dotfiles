@@ -23,3 +23,5 @@
         org-log-done-with-time t
         )
   )
+
+(setq rust-format-on-save t)
