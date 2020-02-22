@@ -63,6 +63,9 @@ floating_modifier $mod
 # start a terminal
 # set $TERMINAL alacritty
 bindsym $mod+Return exec alacritty
+# Drop-down terminal. Does not work, oniy tiles
+# bindsym $mod+i exec tdrop -a alacritty
+
 
 # kill focused window
 bindsym $mod+Shift+q kill
