@@ -5,10 +5,10 @@
       doom-font (font-spec :family "Hack" :size 15)
       user-full-name "Tan Yee Jian"
       user-mail-address "tanyeejian@gmail.com"
-      ;; doom-unicode-font (font-spec :family "Noto" :size 14)
+      doom-unicode-font (font-spec :family "Noto" :size 15)
       )
 
-;; (set-face-attribute 'default nil :height 120)
+(set-face-attribute 'default nil :height 130)
 
 (after! org
   (map! :map org-mode-map
@@ -26,7 +26,7 @@
 
 (after! rust
   (setq ;; rustic-lsp-format t
-        rustic-format-on-save t
+        rustic-format-on-save f
         ;; rustic-format-trigger 'on-save)
         )
   )
