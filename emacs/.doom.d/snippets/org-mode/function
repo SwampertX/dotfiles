@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: function
+# uuid:
+# key: fn
+# condition: t
+# --
+\\(${1: f}: ${2:\mathbb{R}} \rightarrow ${3:\mathbb{R}} \\)
