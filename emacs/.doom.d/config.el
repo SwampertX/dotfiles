@@ -26,3 +26,4 @@
   )
 
 ;; (after! rust ;; (setq rustic-format-on-save f))
+(after! evil-snipe (evil-snipe-mode -1))
