@@ -27,7 +27,3 @@
 
 ;; (after! rust ;; (setq rustic-format-on-save f))
 (after! evil-snipe (evil-snipe-mode -1))
-
-(add-to-list 'projectile-globally-ignored-directories "~/nus/ivle/y1s1")
-(add-to-list 'projectile-globally-ignored-directories "~/nus/ivle/y1s2")
-(add-to-list 'projectile-globally-ignored-directories "~/nus/ivle/y2s1")
