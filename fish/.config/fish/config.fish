@@ -30,4 +30,4 @@ set -a PATH .
 set FZF_DEFAULT_COMMAND 'fd'
 
 # thefuck --alias | source
-starship init fish | source
+# starship init fish | source
