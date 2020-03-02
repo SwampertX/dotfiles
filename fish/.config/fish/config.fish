@@ -18,6 +18,10 @@ abbr -a mkdir "mkdir -p"
 abbr -a zathura "zathura --fork"
 abbr -a ssh "env TERM=xterm ssh"
 
+# some default flags
+abbr -a valgrind "valgrind --leak-check=full --show-leak-kinds=all -s"
+abbr -a gcc "gcc -g -Wall -Wextra"
+
 abbr -a doom "~/.emacs.d/bin/doom"
 
 if not functions -q fisher

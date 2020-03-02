@@ -13,6 +13,7 @@ SETUVAR _fish_abbr_doom:\x7e/\x2eemacs\x2ed/bin/doom
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gb:git\x20branch
 SETUVAR _fish_abbr_gc:git\x20checkout
+SETUVAR _fish_abbr_gcc:gcc\x20\x2dg\x20\x2dWall\x20\x2dWextra
 SETUVAR _fish_abbr_gco:git\x20checkout
 SETUVAR _fish_abbr_gd:git\x20diff
 SETUVAR _fish_abbr_glog:git\x20log
@@ -27,6 +28,7 @@ SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
 SETUVAR _fish_abbr_py:python
 SETUVAR _fish_abbr_py3:python3
 SETUVAR _fish_abbr_ssh:env\x20TERM\x3dxterm\x20ssh
+SETUVAR _fish_abbr_valgrind:valgrind\x20\x2d\x2dleak\x2dcheck\x3dfull\x20\x2d\x2dshow\x2dleak\x2dkinds\x3dall\x20\x2ds
 SETUVAR _fish_abbr_xclip:xclip\x20\x2dsel\x20clip
 SETUVAR _fish_abbr_zathura:zathura\x20\x2d\x2dfork
 SETUVAR fish_color_autosuggestion:969896
