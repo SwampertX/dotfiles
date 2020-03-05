@@ -30,7 +30,7 @@ if not functions -q fisher
     fish -c fisher
 end
 
-set -a PATH .
+set -a PATH . ~/bin
 set FZF_DEFAULT_COMMAND 'fd'
 
 # thefuck --alias | source
