@@ -4,7 +4,7 @@
     "coc-prettier": ">=1.1.11",
     "coc-python": ">=1.2.9",
     "coc-rls": ">=1.1.4",
-    "coc-snippets": ">=2.1.20",
+    "coc-snippets": ">=2.1.21",
     "coc-solargraph": ">=1.1.6",
     "coc-tsserver": ">=1.4.9"
   }
