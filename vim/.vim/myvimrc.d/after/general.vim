@@ -12,6 +12,7 @@ autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
 autocmd Filetype typescript setlocal ts=2 sw=2 expandtab
 autocmd Filetype markdown setlocal ts=2 sw=2 expandtab
 autocmd Filetype tex setlocal ts=2 sw=2 expandtab
+autocmd Filetype c setlocal ts=2 sw=2 expandtab
 
 set termguicolors
 colorscheme gruvbox
