@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: proof
+# uuid: proof
+# key: <p
+# condition: t
+# --
+
+#+ATTR_LATEX: :options [$1]
+#+BEGIN_proof
+$0
+#+END_proof
