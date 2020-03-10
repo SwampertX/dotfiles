@@ -1,11 +1,11 @@
 # -*- mode: snippet -*-
-# name: theorem
-# uuid: theorem
-# key: <thm
+# name: example
+# uuid: example
+# key: <ex
 # condition: t
 # --
 
 #+ATTR_LATEX: :options [$1]
-#+BEGIN_theorem
+#+BEGIN_example
 $0
-#+END_theorem
+#+END_example

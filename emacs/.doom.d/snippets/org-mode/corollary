@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: corollary
+# uuid: corollary
+# key: <co
+# condition: t
+# --
+
+#+BEGIN_corollary
+$0
+#+END_corollary
