@@ -6,6 +6,6 @@
 # --
 
 #+ATTR_LATEX: :options [$1]
-#+BEGIN_example
+#+BEGIN_ex
 $0
-#+END_example
+#+END_ex

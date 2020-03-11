@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: observation
+# uuid: observation
+# key: <obs
+# condition: t  
+# --
+
+#+BEGIN_observation
+$0
+#+END_observation

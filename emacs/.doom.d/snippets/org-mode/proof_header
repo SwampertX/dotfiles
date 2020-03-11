@@ -10,5 +10,5 @@
 #+LATEX_HEADER: \newtheorem{lemma}{Lemma}[theorem]
 #+LATEX_HEADER: \newtheorem{note}{Note}[theorem]
 #+LATEX_HEADER: \newtheorem{definition}{Definition}[section]
-#+LATEX_HEADER: \newtheorem{example}{Example}[section]
+#+LATEX_HEADER: \newtheorem{ex}{Example}[section]
 #+LATEX_HEADER: \newtheorem{observation}{Observation}[section]
