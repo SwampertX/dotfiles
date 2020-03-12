@@ -22,6 +22,7 @@
         org-agenda-files (list "~/Dropbox/org/")
         org-directory "~/projects/org/"
         org-log-done-with-time t
+        org-list-allow-alphabetical t
         )
   )
 
