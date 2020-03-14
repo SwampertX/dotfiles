@@ -10,6 +10,7 @@ let g:ale_linters = {
             \ 'bash': ['eslint', 'prettier'],
             \ 'markdown': ['alex'],
             \ 'latex': ['texlab'],
+            \ 'rust': ['rustfmt'],
             \}
 
 let g:ale_fixers = {
