@@ -17,6 +17,7 @@ abbr -a xclip "xclip -sel clip"
 abbr -a mkdir "mkdir -p"
 abbr -a zathura "zathura --fork"
 abbr -a ssh "env TERM=xterm ssh"
+abbr -a sshnus "env TERM=xterm ssh -J sunfire"
 
 # some default flags
 abbr -a valgrind "valgrind --leak-check=full --show-leak-kinds=all -s"
