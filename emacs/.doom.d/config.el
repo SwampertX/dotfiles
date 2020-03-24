@@ -50,7 +50,8 @@
 \\newtheorem{observation}{Observation}[section]
 \\DeclareMathOperator{\\diam}{diam}
 "
-        )
+        org-latex-packages-alist '(("" "amsthm" nil)))
+
   )
 
 ;; (after! rust ;; (setq rustic-format-on-save f))
