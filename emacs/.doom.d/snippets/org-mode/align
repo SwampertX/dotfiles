@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: align
+# uuid: align
+# key: <ali
+# condition: t
+# --
+
+\begin{align*}
+$0
+\end{align*}
+$1
