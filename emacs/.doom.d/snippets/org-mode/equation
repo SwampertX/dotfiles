@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: equation
+# uuid: equation
+# key: <eqn
+# condition: t
+# --
+
+\begin{equation*}
+$0
+\end{equation*}
+$1
