@@ -15,7 +15,7 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 
 setlocal spell
 set spelllang=en_us
-inoremap <C-;> <c-g>u<Esc>[s1z=`]a<c-g>u
+inoremap <C-n> <c-g>u<Esc>[s1z=`]a<c-g>u
 
 " <Esc> escapes terminal
 " tnoremap <Esc> <C-\><C-n>
