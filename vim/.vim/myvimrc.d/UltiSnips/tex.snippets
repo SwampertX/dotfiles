@@ -16,11 +16,19 @@ endglobal
 snippet template "Basic template" b
 \documentclass[12pt, a4paper]{article}
 
+\usepackage[a4paper, total={170mm,257mm}, left=20mm, top=20mm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 \usepackage{amsmath, amssymb, amsthm}
 \usepackage[outputdir=tmp]{minted}
+\usepackage{lmodern}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Tan Yee Jian (A0190190L)}
+\chead{$1}
+\rhead{Tutorial Group 03}
+
 
 % figure support
 \usepackage{import}
@@ -29,8 +37,8 @@ snippet template "Basic template" b
 \usepackage{pdfpages}
 \usepackage{transparent}
 \newcommand{\incfig}[1]{%
-	\def\svgwidth{\columnwidth}
-	\import{./figures/}{#1.pdf_tex}
+  \def\svgwidth{\columnwidth}
+  \import{./figures/}{#1.pdf_tex}
 }
 
 \pdfsuppresswarningpagegroup=1
@@ -45,9 +53,15 @@ snippet template "Basic template" b
 \newtheorem{obs}{Observation}
 \newtheorem{claim}{Claim}
 
+\newcommand{\pmat}[1]{ \begin{pmatrix}#1\end{pmatrix} }
+
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\diam}{diam}
+
+
 \title{$1}
 \author{Tan Yee Jian}
-\date{`date +"%d %B %Y"`}
+\date{\today}
 
 \begin{document}
 	\maketitle
