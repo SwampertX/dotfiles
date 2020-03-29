@@ -66,7 +66,7 @@ let g:vimtex_quickfix_mode=0
 " let g:UltiSnipsJumpBackwardTrigger = '<alt-f>'
 
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'} " for VimPlug
-set conceallevel=2
+set conceallevel=0
 let g:tex_conceal="abdgm"
 
 Plug 'honza/vim-snippets'

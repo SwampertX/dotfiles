@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: matrix
+# uuid: matrix
+# key: <mat
+# condition: t
+# --
+
+\begin{pmatrix}
+$0
+\end{pmatrix}
+$1
