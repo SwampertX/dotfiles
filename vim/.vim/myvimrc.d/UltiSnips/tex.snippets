@@ -14,7 +14,7 @@ def math():
 endglobal
 
 snippet template "Basic template" b
-\documentclass[12pt, a4paper]{article}
+\documentclass[11pt, a4paper]{article}
 
 \usepackage[a4paper, total={170mm,257mm}, left=20mm, top=20mm]{geometry}
 \usepackage[utf8]{inputenc}
@@ -54,6 +54,8 @@ snippet template "Basic template" b
 \newtheorem{claim}{Claim}
 
 \newcommand{\pmat}[1]{ \begin{pmatrix}#1\end{pmatrix} }
+\newcommand{\seqn}[1]{(#1)^\infty_{n=1}}
+\newcommand{\seqk}[1]{(#1)^\infty_{k=1}}
 
 \DeclareMathOperator{\spn}{span}
 \DeclareMathOperator{\diam}{diam}
