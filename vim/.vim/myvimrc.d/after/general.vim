@@ -36,3 +36,5 @@ set number
 set relativenumber
 set cursorline
 set statusline^=%{coc#status()}
+set fillchars=fold:\ 
+set fillchars=
