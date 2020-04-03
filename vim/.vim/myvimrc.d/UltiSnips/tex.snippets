@@ -27,7 +27,7 @@ snippet template "Basic template" b
 \pagestyle{fancy}
 \lhead{Tan Yee Jian (A0190190L)}
 \chead{$1}
-\rhead{Tutorial Group 03}
+\rhead{${2:Tutorial Group X}}
 
 
 % figure support
@@ -180,14 +180,14 @@ snippet \{ "curly braces" iA
 \\{$1\\}$0
 endsnippet
 
-snippet prf "proof" bA
+snippet prf "proof"
 \begin{proof}
 	${1:${VISUAL}}
-.\end{proof}
+\end{proof}
 endsnippet
 
-snippet sln "solution" bA
+snippet sln "solution"
 \begin{proof}[Solution]
 	${1:${VISUAL}}
-.\end{proof}
+\end{proof}
 endsnippet
