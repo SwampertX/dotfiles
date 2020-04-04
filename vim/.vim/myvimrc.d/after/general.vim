@@ -17,8 +17,8 @@ autocmd Filetype c setlocal ts=2 sw=2 expandtab
 set termguicolors
 colorscheme gruvbox
 
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
+" highlight ExtraWhitespace ctermbg=red guibg=red
+" match ExtraWhitespace /\s\+$/
 
 set confirm
 set hidden
@@ -36,5 +36,7 @@ set number
 set relativenumber
 set cursorline
 set statusline^=%{coc#status()}
-set fillchars=fold:\ 
+set fillchars=fold:\
 set fillchars=
+
+let g:tex_flavor = "latex"

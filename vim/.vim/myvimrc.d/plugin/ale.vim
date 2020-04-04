@@ -9,16 +9,19 @@ let g:ale_linters = {
             \ 'javascript': ['eslint', 'prettier'],
             \ 'bash': ['eslint', 'prettier'],
             \ 'markdown': ['alex'],
-            \ 'latex': ['texlab'],
+            \ 'tex': ['latexindent'],
+            \ 'latex': ['latexindent'],
             \ 'rust': ['rls'],
             \}
 
 let g:ale_fixers = {
+            \ '*' : ['remove_trailing_lines', 'trim_whitespace'],
             \ 'ruby' : ['rubocop'],
             \ 'python': ['black'],
             \ 'rust': ['rustfmt'],
             \ 'markdown': ['alex'],
-            \ 'latex': ['texlab'],
+            \ 'tex': ['latexindent'],
+            \ 'latex': ['latexindent'],
             \}
 
 let g:ale_fix_on_save = 1

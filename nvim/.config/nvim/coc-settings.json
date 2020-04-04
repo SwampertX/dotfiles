@@ -6,7 +6,7 @@
         "javascriptreact",
         "css",
         "java",
-        "markdown"
+        "markdown",
     ],
     "languageserver": {
         "golang": {
