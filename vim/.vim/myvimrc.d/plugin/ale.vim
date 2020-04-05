@@ -4,8 +4,9 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 nmap <silent> gd :ALEGoToDefinition<CR>
 
 let g:ale_linters = {
+            \ 'cpp': ['clang'],
             \ 'ruby': ['rubocop'],
-            \ 'python': ['black'],
+            \ 'python': ['flake8'],
             \ 'javascript': ['eslint', 'prettier'],
             \ 'bash': ['eslint', 'prettier'],
             \ 'markdown': ['alex'],
@@ -16,6 +17,7 @@ let g:ale_linters = {
 
 let g:ale_fixers = {
             \ '*' : ['remove_trailing_lines', 'trim_whitespace'],
+            \ 'cpp' : ['clangtidy'],
             \ 'ruby' : ['rubocop'],
             \ 'python': ['black'],
             \ 'rust': ['rustfmt'],
