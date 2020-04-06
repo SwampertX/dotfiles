@@ -33,7 +33,6 @@ nnoremap j gj
 nnoremap k gk
 
 set number
-set relativenumber
 set cursorline
 set statusline^=%{coc#status()}
 set fillchars=fold:\
