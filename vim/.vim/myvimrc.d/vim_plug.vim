@@ -17,12 +17,12 @@ Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 
 " post install (yarn install | npm install) then load plugin only for editing supported files
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+" Plug 'prettier/vim-prettier', {
+"   \ 'do': 'yarn install',
+"   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 " Editorconfig
-Plug 'editorconfig/editorconfig-vim'
+" Plug 'editorconfig/editorconfig-vim'
 
 " status and tabline
 Plug 'vim-airline/vim-airline'
@@ -31,7 +31,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " rule them all, language!
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 
 " The power of DNN
 " Plug 'zxqfl/tabnine-vim'
@@ -61,10 +61,10 @@ let g:vimtex_fold_enabled=1
 
 " Use coc-snippets instead
 " Plug 'sirver/ultisnips'
-" let g:UltiSnipsSnippetDirectories=["~/.vim/myvimrc.d/ultisnips"]
-" let g:UltiSnipsExpandTrigger = '<c-e>'
-" let g:UltiSnipsJumpForwardTrigger = '<alt-f>'
-" let g:UltiSnipsJumpBackwardTrigger = '<alt-f>'
+" let g:UltiSnipsSnippetDirectories=["~/.vim/myvimrc.d/UltiSnips"]
+" let g:UltiSnipsExpandTrigger = '<Tab>'
+" let g:UltiSnipsJumpForwardTrigger = '<C-j>'
+" let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'} " for VimPlug
 set conceallevel=0
@@ -79,7 +79,7 @@ Plug 'tpope/vim-commentary'
 Plug 'wellle/targets.vim'
 
 " git wrapper, by tim pope
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 
 Plug 'jceb/vim-orgmode'
 

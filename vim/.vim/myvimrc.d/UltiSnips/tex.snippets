@@ -71,6 +71,72 @@ snippet template "Basic template" b
 \end{document}
 endsnippet
 
+snippet cheat "Cheet Sheet Template"
+\documentclass[7pt, a4paper,landscape]{article}
+
+\usepackage[a4paper, total={290mm,200mm}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage[outputdir=tmp]{minted}
+\usepackage{lmodern}
+\usepackage{multicol}
+
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+  \def\svgwidth{\columnwidth}
+  \import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{crl}{Corollary}[thm]
+\newtheorem{lemma}{Lemma}[thm]
+\newtheorem{note}{Note}[thm]
+\newtheorem{defn}{Definition}[section]
+\newtheorem{ex}{Example}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{obs}{Observation}
+\newtheorem{claim}{Claim}
+
+\newcommand{\pmat}[1]{ \begin{pmatrix}#1\end{pmatrix} }
+\newcommand{\seqn}[1]{(#1)^\infty_{n=1}}
+\newcommand{\seqk}[1]{(#1)^\infty_{k=1}}
+
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\diam}{diam}
+
+
+\title{$1}
+\author{Tan Yee Jian}
+\date{\today}
+
+\begin{document}
+
+\begin{center}
+	{\textbf{$1}}
+\end{center}
+
+\begin{multicols*}{3}
+	\textbf{Avoid using sections}
+	$0
+
+	\hrulefill
+
+\end{multicols*}{3}
+\end{document}
+endsnippet
+
+
+
 snippet code "Code Block"
 \begin{minted}{${1:language}}
 	$0
@@ -96,7 +162,7 @@ endsnippet
 # `$2
 # endsnippet
 
-snippet ilm "Math" wA
+snippet $ "Math" wA
 $${1}$${2}
 endsnippet
 
