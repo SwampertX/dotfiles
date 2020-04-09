@@ -39,3 +39,5 @@ set fillchars=fold:\
 set fillchars=
 
 let g:tex_flavor = "latex"
+
+set undofile

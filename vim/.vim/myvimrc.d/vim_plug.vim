@@ -84,6 +84,10 @@ Plug 'wellle/targets.vim'
 Plug 'jceb/vim-orgmode'
 
 Plug 'jiangmiao/auto-pairs'
+let g:autopairs={'(':'*', '[':']', '{':'}',"'":"'",'"':'"', '`':'`','$':'$'}
 
 Plug 'preservim/nerdtree'
+
+Plug 'gisraptor/vim-lilypond-integrator'
+
 call plug#end()
