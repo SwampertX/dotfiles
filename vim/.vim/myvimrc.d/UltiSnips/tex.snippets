@@ -1,17 +1,17 @@
-global !p
-texMathZones = ['texMathZone'+x for x in ['A', 'AS', 'B', 'BS', 'C', 'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS', 'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z']]
-texIgnoreMathZones = ['texMathText']
-texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
-texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
-ignore = texIgnoreMathZoneIds[0]
-def math():
-	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
-	try:
-		first = next(i for i in reversed(synstackids) if i in texIgnoreMathZoneIds or i in texMathZoneIds)
-		return first != ignore
-	except StopIteration:
-		return False
-endglobal
+# global !p
+# texMathZones = ['texMathZone'+x for x in ['A', 'AS', 'B', 'BS', 'C', 'CS', 'D', 'DS', 'E', 'ES', 'F', 'FS', 'G', 'GS', 'H', 'HS', 'I', 'IS', 'J', 'JS', 'K', 'KS', 'L', 'LS', 'DS', 'V', 'W', 'X', 'Y', 'Z']]
+# texIgnoreMathZones = ['texMathText']
+# texMathZoneIds = vim.eval('map('+str(texMathZones)+", 'hlID(v:val)')")
+# texIgnoreMathZoneIds = vim.eval('map('+str(texIgnoreMathZones)+", 'hlID(v:val)')")
+# ignore = texIgnoreMathZoneIds[0]
+# def math():
+# 	synstackids = vim.eval("synstack(line('.'), col('.') - (col('.')>=2 ? 1 : 0))")
+# 	try:
+# 		first = next(i for i in reversed(synstackids) if i in texIgnoreMathZoneIds or i in texMathZoneIds)
+# 		return first != ignore
+# 	except StopIteration:
+# 		return False
+# endglobal
 
 snippet template "Basic template" b
 \documentclass[11pt, a4paper]{article}
@@ -176,33 +176,33 @@ snippet ali "Align" bA
 .\end{align*}
 endsnippet
 
-snippet '([A-Za-z])(\d)' "auto subscript" wrA
-`!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
-endsnippet
+# snippet '([A-Za-z])(\d)' "auto subscript" wrA
+# `!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
+# endsnippet
 
-snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
-`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
-endsnippet
+# snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
+# `!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
+# endsnippet
 
-snippet pw "^2" iA
-^{$1}$0
-endsnippet
+# snippet pw "^2" iA
+# ^{$1}$0
+# endsnippet
 
-snippet sr "^2" iA
-^2
-endsnippet
+# snippet sr "^2" iA
+# ^2
+# endsnippet
 
-snippet cb "^3" iA
-^3
-endsnippet
+# snippet cb "^3" iA
+# ^3
+# endsnippet
 
-snippet compl "complement" iA
-^{c}
-endsnippet
+# snippet compl "complement" iA
+# ^{c}
+# endsnippet
 
-snippet td "superscript" iA
-^{$1}$0
-endsnippet
+# snippet td "superscript" iA
+# ^{$1}$0
+# endsnippet
 
 snippet box "Box"
 \fbox{$1} $0
