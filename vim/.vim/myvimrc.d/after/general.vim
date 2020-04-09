@@ -36,7 +36,7 @@ set number
 set cursorline
 set statusline^=%{coc#status()}
 set fillchars=fold:\
-set fillchars=
+set nohlsearch
 
 let g:tex_flavor = "latex"
 
