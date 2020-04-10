@@ -35,7 +35,6 @@ nnoremap k gk
 set number
 set cursorline
 set statusline^=%{coc#status()}
-set fillchars=fold:\
 set nohlsearch
 
 let g:tex_flavor = "latex"
