@@ -2,14 +2,14 @@
 
 ;; Place your private configuration here
 (setq doom-theme 'doom-gruvbox
-      doom-font (font-spec :family "Hack" :size 15)
+      doom-font (font-spec :family "Iosevka Term" :size 15)
       user-full-name "Tan Yee Jian"
       user-mail-address "tanyeejian@gmail.com"
       doom-unicode-font (font-spec :family "Noto" :size 15)
       )
 
 ;; (set-face-attribute 'default nil :height 130)
-(custom-set-faces! '(default :height 130))
+;; (custom-set-faces! '(default :height 130))
 
 (after! org
   (map! :map org-mode-map
