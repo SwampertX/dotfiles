@@ -10,6 +10,9 @@
 
 ;; (set-face-attribute 'default nil :height 130)
 ;; (custom-set-faces! '(default :height 130))
+(map! :map evil-mode-map
+      :n "g-e" #'eval-region
+      :n "g-r" #'lsp-find-references)
 
 (after! org
   (map! :map org-mode-map
@@ -54,5 +57,9 @@
 
   )
 
+(after! pdf-tools
+  (map! :map pdf-view-mode-map
+        :n "J" #'pdf-view-next-page-command
+        :n "K" #'pdf-view-previous-page-command))
 ;; (after! rust ;; (setq rustic-format-on-save f))
 (after! evil-snipe (evil-snipe-mode -1))
