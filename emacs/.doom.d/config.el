@@ -8,11 +8,7 @@
       doom-unicode-font (font-spec :family "Noto" :size 15)
       )
 
-;; (set-face-attribute 'default nil :height 130)
-;; (custom-set-faces! '(default :height 130))
-(map! :map evil-mode-map
-      :n "g-e" #'eval-region
-      :n "g-r" #'lsp-find-references)
+(custom-set-faces! '(default :height 130))
 
 (after! org
   (map! :map org-mode-map
