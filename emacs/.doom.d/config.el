@@ -53,9 +53,13 @@
 
   )
 
+
 (after! pdf-tools
+  ;; (defun pdf-view-next-five-lines () (pdf-view-next-line-or-next-page 5))
   (map! :map pdf-view-mode-map
         :n "J" #'pdf-view-next-page-command
-        :n "K" #'pdf-view-previous-page-command))
+        :n "K" #'pdf-view-previous-page-command
+        ;; :n "C-D" 'pdf-view-next-five-lines)
+  )
 ;; (after! rust ;; (setq rustic-format-on-save f))
 (after! evil-snipe (evil-snipe-mode -1))
