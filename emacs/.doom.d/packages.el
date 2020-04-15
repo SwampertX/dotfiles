@@ -5,3 +5,4 @@
 ;; (package! some-package)
 ;; (package! another-package :recipe (:host github :repo "username/repo"))
 (package! gruvbox-theme)
+(package! evil-snipe :disable t)

@@ -2,13 +2,14 @@
 
 ;; Place your private configuration here
 (setq doom-theme 'gruvbox-dark-hard
-      doom-font (font-spec :family "Iosevka Term" :height 500)
+      doom-font (font-spec :family "Iosevka Term" :size 15)
       user-full-name "Tan Yee Jian"
       user-mail-address "tanyeejian@gmail.com"
       doom-unicode-font (font-spec :family "Noto" :size 15)
+
       )
 
-;; (custom-set-faces! '(default :height 130))
+(custom-set-faces! '(default :height 130))
 
 (after! org
   (map! :map org-mode-map
@@ -22,33 +23,32 @@
         org-directory "~/projects/org/"
         org-log-done-with-time t
         org-list-allow-alphabetical t
-        org-format-latex-header "\\documentclass{article}
-\\usepackage[usenames]{color}
-[PACKAGES]
-[DEFAULT-PACKAGES]
-\\pagestyle{empty}             % do not remove
-% The settings below are copied from fullpage.sty
-\\setlength{\\textwidth}{\\paperwidth}
-\\addtolength{\\textwidth}{-3cm}
-\\setlength{\\oddsidemargin}{1.5cm}
-\\addtolength{\\oddsidemargin}{-2.54cm}
-\\setlength{\\evensidemargin}{\\oddsidemargin}
-\\setlength{\\textheight}{\\paperheight}
-\\addtolength{\\textheight}{-\\headheight}
-\\addtolength{\\textheight}{-\\headsep}
-\\addtolength{\\textheight}{-\\footskip}
-\\addtolength{\\textheight}{-3cm}
-\\setlength{\\topmargin}{1.5cm}
-\\addtolength{\\topmargin}{-2.54cm}
-\\newtheorem{theorem}{Theorem}[section]
-\\newtheorem{corollary}{Corollary}[theorem]
-\\newtheorem{lemma}{Lemma}[theorem]
-\\newtheorem{note}{Note}[theorem]
-\\newtheorem{definition}{Definition}[section]
-\\newtheorem{ex}{Example}[section]
-\\newtheorem{observation}{Observation}[section]
-\\DeclareMathOperator{\\diam}{diam}
-"
+        org-format-latex-header (concat "\\documentclass{article}"
+                                        "\\usepackage[usenames]{color}"
+                                        "[PACKAGES]"
+                                        "[DEFAULT-PACKAGES]"
+                                        "\\pagestyle{empty}             % do not remove"
+                                        "% The settings below are copied from fullpage.sty"
+                                        "\\setlength{\\textwidth}{\\paperwidth}"
+                                        "\\addtolength{\\textwidth}{-3cm}"
+                                        "\\setlength{\\oddsidemargin}{1.5cm}"
+                                        "\\addtolength{\\oddsidemargin}{-2.54cm}"
+                                        "\\setlength{\\evensidemargin}{\\oddsidemargin}"
+                                        "\\setlength{\\textheight}{\\paperheight}"
+                                        "\\addtolength{\\textheight}{-\\headheight}"
+                                        "\\addtolength{\\textheight}{-\\headsep}"
+                                        "\\addtolength{\\textheight}{-\\footskip}"
+                                        "\\addtolength{\\textheight}{-3cm}"
+                                        "\\setlength{\\topmargin}{1.5cm}"
+                                        "\\addtolength{\\topmargin}{-2.54cm}"
+                                        "\\newtheorem{theorem}{Theorem}[section]"
+                                        "\\newtheorem{corollary}{Corollary}[theorem]"
+                                        "\\newtheorem{lemma}{Lemma}[theorem]"
+                                        "\\newtheorem{note}{Note}[theorem]"
+                                        "\\newtheorem{definition}{Definition}[section]"
+                                        "\\newtheorem{ex}{Example}[section]"
+                                        "\\newtheorem{observation}{Observation}[section]"
+                                        "\\DeclareMathOperator{\\diam}{diam}")
         org-latex-packages-alist '(("" "amsthm" nil)))
 
   )
@@ -60,4 +60,4 @@
         :n "K" #'pdf-view-previous-page-command))
 
 ;; (after! rust ;; (setq rustic-format-on-save f))
-(after! evil-snipe (evil-snipe-mode -1))
+;; (after! evil-snipe (evil-snipe-mode -1))
