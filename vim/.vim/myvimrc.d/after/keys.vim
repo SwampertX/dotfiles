@@ -7,7 +7,10 @@ nnoremap <leader>C :%s/\s\+$//e<CR>
 
 nnoremap <leader>cc :CocCommand<CR>
 nnoremap <leader>ca :CocAction<CR>
-nnoremap <leader>cf :CocConfig<CR>
+nnoremap <leader>cconf :CocConfig<CR>
+command! -nargs=0 Format :call CocAction('format')
+nnoremap <leader>cf :Format<CR>
+
 
 nnoremap <leader>vim :Files ~/.vim/myvimrc.d<CR>
 

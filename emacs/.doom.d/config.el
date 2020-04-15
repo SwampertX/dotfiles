@@ -1,7 +1,7 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
-(setq doom-theme 'doom-gruvbox
+(setq doom-theme 'gruvbox-dark-hard
       doom-font (font-spec :family "Iosevka Term" :size 15)
       user-full-name "Tan Yee Jian"
       user-mail-address "tanyeejian@gmail.com"
@@ -55,11 +55,9 @@
 
 
 (after! pdf-tools
-  ;; (defun pdf-view-next-five-lines () (pdf-view-next-line-or-next-page 5))
   (map! :map pdf-view-mode-map
         :n "J" #'pdf-view-next-page-command
-        :n "K" #'pdf-view-previous-page-command
-        ;; :n "C-D" 'pdf-view-next-five-lines)
-  )
+        :n "K" #'pdf-view-previous-page-command))
+
 ;; (after! rust ;; (setq rustic-format-on-save f))
 (after! evil-snipe (evil-snipe-mode -1))
