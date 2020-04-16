@@ -6,7 +6,6 @@
       user-full-name "Tan Yee Jian"
       user-mail-address "tanyeejian@gmail.com"
       doom-unicode-font (font-spec :family "Noto" :size 15)
-
       )
 
 (custom-set-faces! '(default :height 130))
