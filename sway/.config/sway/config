@@ -175,6 +175,8 @@ assign [class="Slack"]              $ws3
 for_window [class="Spotify"] move to workspace $ws10
 assign [class="seedu.guilttrip.MainApp"] $ws4
 
+assign [class="firefox-trunk"] -> $ws2
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)

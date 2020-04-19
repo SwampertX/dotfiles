@@ -14,7 +14,7 @@ set $home /home/titanx
 set $browser firefox
 set $shell /usr/bin/zsh
 set $config /home/titanx/.config
-set $sink 0
+set $sink 1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
