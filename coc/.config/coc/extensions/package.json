@@ -2,11 +2,11 @@
   "dependencies": {
     "coc-json": ">=1.2.5",
     "coc-prettier": ">=1.1.12",
-    "coc-python": ">=1.2.9",
-    "coc-rls": ">=1.1.4",
-    "coc-snippets": ">=2.1.25",
+    "coc-python": ">=1.2.10",
+    "coc-rls": ">=1.1.5",
+    "coc-snippets": ">=2.1.26",
     "coc-solargraph": ">=1.1.6",
-    "coc-texlab": ">=1.10.4",
+    "coc-texlab": ">=2.0.0",
     "coc-tsserver": ">=1.4.15"
   }
 }
