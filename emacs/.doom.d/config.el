@@ -8,7 +8,7 @@
       doom-unicode-font (font-spec :family "Noto" :size 15)
       )
 
-(custom-set-faces! '(default :height 130))
+(custom-set-faces! '(default :height 135))
 
 (after! org
   (map! :map org-mode-map
