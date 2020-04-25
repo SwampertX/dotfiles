@@ -56,6 +56,7 @@ clean_install () {
     daily="i3 i3blocks firefox-trunk emacs nm-tray xinit alacritty telegram-desktop"
     tools="flameshot compton htop zathura texlive pandoc feh"
     input="fcitx fcitx-googlepinyin"
+    wayland="light wl-clipboard wofi"
 
     fix_broken
     sudo apt install $cli $fonts $daily $tools $input --yes
