@@ -32,6 +32,7 @@ end
 
 set -a PATH . ~/bin /snap/bin ~/.cargo/bin
 set FZF_DEFAULT_COMMAND 'fd'
+set GTYPIST_PATH ~/usr/share/gtypist
 
 # thefuck --alias | source
 # starship init fish | source

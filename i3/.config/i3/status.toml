@@ -14,17 +14,28 @@ alert = 10.0
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mup}%"
-format_swap = "{SUp}%"
+format_mem = "{Mug}/{MTg}GB"
+format_swap = "{SUg}/{STg}GB"
+
+[[block]]
+block = "net"
+device = "wlp2s0"
+# ssid = true
+# signal_strength = true
+# ip = true
+speed_up = false
+# graph_up = true
+interval = 5
+use_bits = false
 
 [[block]]
 block = "cpu"
 interval = 1
 
-[[block]]
-block = "load"
-interval = 1
-format = "{1m}"
+# [[block]]
+# block = "load"
+# interval = 1
+# format = "{1m}"
 
 [[block]]
 block = "sound"
