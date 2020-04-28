@@ -23,7 +23,7 @@ set $config /home/titanx/.config
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango:DejaVu Sans Mono 12
-font pango:Hack 11
+font pango:Iosevka Term 12
 
 # set primary gruvbox colorscheme colors
 set $bg #282828
@@ -251,7 +251,7 @@ exec redshift -l 1.17:103.46 -t 5700:2500
 exec nm-applet
 exec ibus-daemon
 exec flameshot
-exec dropbox start
+# exec dropbox start
 
 # Auto-start
 exec firefox-trunk
