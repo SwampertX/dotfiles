@@ -210,8 +210,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% #decrease sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +4% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -4% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
 
 # Sreen brightness controls
@@ -226,6 +226,7 @@ bindsym Print exec flameshot full -p ~/Pictures
 #         status_command i3blocks
 # }
 
+# i3status-rs
 bar {
     font pango:Iosevka Term, FontAwesome 12
     position bottom
@@ -242,16 +243,14 @@ bar {
 }
 # Wallpaper and lockscreen
 exec_always feh --randomize --bg-scale $config/wallpapers/*
-# bindsym $mod+shift+x exec i3lock -i $config/lockscreen.png && echo mem > /sys/power/state
 bindsym $mod+shift+x exec $config/lockscreen/randomlock.fish
-exec_always compton # --config ~/.config/compton/compton.conf
+exec_always compton
 exec redshift -l 1.17:103.46 -t 5700:2500
 
 # Enable nice applets
 exec nm-applet
 exec ibus-daemon
 exec flameshot
-# exec dropbox start
 
 # Auto-start
 exec firefox-trunk
