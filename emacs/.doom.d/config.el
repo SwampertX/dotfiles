@@ -68,3 +68,10 @@
 
 (after! rustic
   (setq rustic-lsp-server 'rust-analyzer))
+
+(after! evil-org
+  (map! :map evil-org-mode-map
+      :nv "j" #'evil-next-visual-line
+      :nv "k" #'evil-previous-visual-line))
+
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
