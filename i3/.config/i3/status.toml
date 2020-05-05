@@ -42,6 +42,11 @@ interval = 1
 block = "sound"
 
 [[block]]
+block = "pomodoro"
+length = 25
+break_length = 5
+
+[[block]]
 block = "time"
 interval = 1
 format = "%a %d/%m %T"
