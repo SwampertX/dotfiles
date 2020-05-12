@@ -28,6 +28,9 @@ kg="${k}.gpg"
 # Get totp secret for given service
 totp=$($_gpg2 --quiet -u "${kid}" -r "${uid}" --decrypt "$kg")
 
+# Make sure we don't have .key file in plain text format ever #
+[ -f "$k" ] && echo "Warning - Plain text key file \"$k\" found."
+
 # Generate 2FA totp code and display on screen
 echo "Your code for $s is ..."
 code=$($_oathtool -b --totp "$totp")
@@ -36,6 +39,3 @@ code=$($_oathtool -b --totp "$totp")
 type -a xclip &>/dev/null
 [ $? -eq 0 ] && { echo $code | xclip -sel clip; echo "*** Code copied to clipboard too ***"; }
 echo "$code"
-
-# Make sure we don't have .key file in plain text format ever #
-[ -f "$k" ] && echo "Warning - Plain text key file \"$k\" found."
