@@ -21,6 +21,7 @@ s="$1"
 k="${dir}/${s}/.key"
 kg="${k}.gpg"
 
+
 # failsafe stuff
 [ "$1" == "" ] && { echo "Usage: $0 service"; exit 1; }
 [ ! -f "$kg" ] && { echo "Error: Encrypted file \"$kg\" not found."; exit 2; }
@@ -32,10 +33,13 @@ totp=$($_gpg2 --quiet -u "${kid}" -r "${uid}" --decrypt "$kg")
 [ -f "$k" ] && echo "Warning - Plain text key file \"$k\" found."
 
 # Generate 2FA totp code and display on screen
-echo "Your code for $s is ..."
+# echo "Your code for $s is ..."
 code=$($_oathtool -b --totp "$totp")
 ## Copy to clipboard too ##
 ## if xclip command found  on Linux system ##
 type -a xclip &>/dev/null
-[ $? -eq 0 ] && { echo $code | xclip -sel clip; echo "*** Code copied to clipboard too ***"; }
+[ $? -eq 0 ] && {
+    echo $code | xclip -sel clip
+    # echo "*** Code copied to clipboard too ***"
+}
 echo "$code"
