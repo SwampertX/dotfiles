@@ -1,11 +1,11 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
-(setq doom-theme 'doom-gruvbox
-      doom-font (font-spec :family "Iosevka Term" :size 15)
+(setq doom-font (font-spec :family "Iosevka Term" :size 15)
+      doom-unicode-font (font-spec :family "Noto" :size 15)
+      doom-theme 'doom-gruvbox
       user-full-name "Tan Yee Jian"
       user-mail-address "tanyeejian@gmail.com"
-      doom-unicode-font (font-spec :family "Noto" :size 15)
       )
 
 (custom-set-faces! '(default :height 135))
