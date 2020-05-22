@@ -82,3 +82,6 @@
       :nv "k" #'evil-previous-visual-line))
 
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
+
+(after! lsp-python-ms
+  (set-lsp-priority! 'mspyls 1))
