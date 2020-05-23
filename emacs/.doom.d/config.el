@@ -70,7 +70,6 @@
 
 (after! org-gcal
   (setq org-gcal-client-id "473532847251-hpakf41dv1dvqa9bjg9rd58hl9g4to89.apps.googleusercontent.com"
-      org-gcal-client-secret "bNEwNr0PSUze39zqUQPmxtqs"
       org-gcal-file-alist '(("tanyeejian@gmail.com" .  "~/Dropbox/org/cal.org"))))
 
 (after! rustic

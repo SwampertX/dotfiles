@@ -35,10 +35,9 @@ set FZF_DEFAULT_COMMAND 'fd'
 set GTYPIST_PATH ~/usr/share/gtypist
 
 # thefuck --alias | source
-# starship init fish | source
+starship init fish | source
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 eval /home/titanx/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 # <<< conda initialize <<<
-
