@@ -177,6 +177,7 @@ workspace $ws7 output HDMI-1 eDP-1
 workspace $ws8 output eDP-1
 workspace $ws9 output eDP-1
 workspace $ws10 output eDP-1
+exec_always $home/.screenlayout/second_first.sh
 
 
 # assign default windows
@@ -247,7 +248,7 @@ bar {
     }
 }
 # Wallpaper and lockscreen
-exec_always feh --randomize --bg-scale $config/wallpapers/*
+exec_always feh --randomize --bg-tile $config/wallpapers/*
 bindsym $mod+shift+x exec $config/lockscreen/randomlock.fish
 exec_always compton
 exec redshift -l 1.17:103.46 -t 5700:2500
@@ -260,3 +261,4 @@ exec flameshot
 # Auto-start
 exec firefox-trunk
 exec telegram
+exec slack
