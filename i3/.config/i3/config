@@ -133,7 +133,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $ws1 "1  "
 set $ws2 "2 "
-set $ws3 "3"
+set $ws3 "3 "
 set $ws4 "4 "
 set $ws5 "5 "
 set $ws6 "6"
@@ -177,7 +177,7 @@ workspace $ws7 output HDMI-1 eDP-1
 workspace $ws8 output eDP-1
 workspace $ws9 output eDP-1
 workspace $ws10 output eDP-1
-exec_always $home/.screenlayout/second_first.sh
+exec_always /home/titanx/.screenlayout/second_first.sh
 
 
 # assign default windows
