@@ -185,6 +185,7 @@ assign [class="Firefox"]            $ws2
 assign [class="Nightly"]            $ws2
 assign [class="TelegramDesktop"]    $ws9
 assign [class="Slack"]              $ws9
+assign [class="zoom"]              $ws3
 for_window [class="Spotify"] move to workspace $ws10
 
 # reload the configuration file
