@@ -2,7 +2,7 @@
 
 ;; Place your private configuration here
 (setq doom-font (font-spec :family "Iosevka Term" :size 15)
-      doom-unicode-font (font-spec :family "Noto" :size 15)
+      doom-unicode-font (font-spec :family "Noto Color Emoji" :size 15)
       doom-theme 'doom-gruvbox
       user-full-name "Tan Yee Jian"
       user-mail-address "tanyeejian@gmail.com"
