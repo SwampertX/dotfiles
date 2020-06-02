@@ -249,8 +249,9 @@ bar {
     }
 }
 # Wallpaper and lockscreen
-exec_always feh --randomize --bg-tile $config/wallpapers/*
+# exec_always feh --randomize --bg-tile $config/wallpapers/*
 bindsym $mod+shift+x exec $config/lockscreen/randomlock.fish
+exec_always $config/wallpapers/randomwall.sh
 exec_always compton
 exec redshift -l 1.17:103.46 -t 5700:2500
 
