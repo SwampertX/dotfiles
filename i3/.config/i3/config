@@ -264,3 +264,4 @@ exec flameshot
 exec firefox-trunk
 exec telegram
 exec slack
+exec dropbox start

@@ -19,7 +19,7 @@
         )
   (setq org-todo-keywords '((sequence "TODO(t)" "INPROGRESS(i)" "WAITING(w)" "|" "DONE(d!)" "CANCELLED(c@)"))
         org-agenda-files (list "~/Dropbox/org/")
-        org-directory "~/projects/org/"
+        org-directory "~/Dropbox/org/"
         org-log-done-with-time t
         org-list-allow-alphabetical t
         org-format-latex-header (concat "\\documentclass{article}"
@@ -56,6 +56,9 @@
                        ("\\.mm\\'" . default)
                        ("\\.x?html?\\'" . default)
                        ("\\.pdf\\'" . "zathura %s"))
+        org-journal-dir "~/Dropbox/org/journal"
+        org-roam-directory "~/Dropbox/org/roam"
+        ;; org-journal-file-type 'weekly
         )
 )
 
