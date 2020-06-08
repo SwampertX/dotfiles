@@ -41,10 +41,10 @@ interval = 1
 [[block]]
 block = "sound"
 
-[[block]]
-block = "pomodoro"
-length = 25
-break_length = 5
+# [[block]]
+# block = "pomodoro"
+# length = 25
+# break_length = 5
 
 [[block]]
 block = "time"
