@@ -37,4 +37,4 @@ set GTYPIST_PATH ~/usr/share/gtypist
 # thefuck --alias | source
 starship init fish | source
 
-cd ~/gojek && source bin/activate.fish && cd ~
+cd ~/gojek && source bin/activate.fish && cd -

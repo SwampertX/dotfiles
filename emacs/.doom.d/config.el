@@ -8,7 +8,7 @@
       user-mail-address "tanyeejian@gmail.com"
       )
 
-(custom-set-faces! '(default :height 135))
+;; (custom-set-faces! '(default :height 135))
 
 (after! org
   (map! :map org-mode-map
