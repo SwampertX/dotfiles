@@ -261,7 +261,7 @@ exec ibus-daemon
 exec flameshot
 
 # Auto-start
-exec firefox-trunk
+exec firefox
 exec telegram
 exec slack
 exec dropbox start
