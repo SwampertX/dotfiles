@@ -12,7 +12,7 @@
 set $mod Mod4
 set $home /home/titanx
 set $browser firefox
-set $shell /usr/bin/zsh
+set $shell /usr/bin/fish
 set $config /home/titanx/.config
 # set $sink 0
 
@@ -23,7 +23,7 @@ set $config /home/titanx/.config
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 # font pango:DejaVu Sans Mono 12
-font pango:Iosevka Term 15
+font pango:Iosevka Term 11
 
 # set primary gruvbox colorscheme colors
 set $bg #282828
@@ -167,16 +167,16 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # dual-display setup
-workspace $ws1 output HDMI-1-1 eDP-1-1
-workspace $ws2 output HDMI-1-1 eDP-1-1
-workspace $ws3 output HDMI-1-1 eDP-1-1
-workspace $ws4 output HDMI-1-1 eDP-1-1
-workspace $ws5 output HDMI-1-1 eDP-1-1
-workspace $ws6 output HDMI-1-1 eDP-1-1
-workspace $ws7 output HDMI-1-1 eDP-1-1
-workspace $ws8 output eDP-1-1
-workspace $ws9 output eDP-1-1
-workspace $ws10 output eDP-1-1
+workspace $ws1 output HDMI-1 eDP-1
+workspace $ws2 output HDMI-1 eDP-1
+workspace $ws3 output HDMI-1 eDP-1
+workspace $ws4 output HDMI-1 eDP-1
+workspace $ws5 output HDMI-1 eDP-1
+workspace $ws6 output HDMI-1 eDP-1
+workspace $ws7 output HDMI-1 eDP-1
+workspace $ws8 output eDP-1
+workspace $ws9 output eDP-1
+workspace $ws10 output eDP-1
 exec_always /home/titanx/.screenlayout/second_first.sh
 
 
@@ -235,7 +235,7 @@ bindsym Print exec flameshot full -p ~/Pictures
 
 # i3status-rs
 bar {
-    font pango:Iosevka Term, FontAwesome 12
+    font pango:Iosevka Term, FontAwesome 10
     position bottom
     status_command ~/bin/i3status-rs $config/i3/status.toml
     colors {
