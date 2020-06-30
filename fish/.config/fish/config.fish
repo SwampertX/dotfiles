@@ -34,6 +34,7 @@ set -a PATH . ~/bin /snap/bin ~/.cargo/bin
 set FZF_DEFAULT_COMMAND 'fd'
 set GTYPIST_PATH ~/usr/share/gtypist
 set XDG_DATA_HOME --append /var/lib/flatpak/exports/share
+set GOOGLE_APPLICATION_CREDENTIALS ~/.config/gcloud/credentials.json
 
 # thefuck --alias | source
 starship init fish | source
