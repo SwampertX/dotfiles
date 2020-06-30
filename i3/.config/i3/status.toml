@@ -41,6 +41,12 @@ interval = 1
 [[block]]
 block = "sound"
 
+[[block]]
+block = "music"
+player = "spotify"
+buttons = ["play", "next"]
+on_collapsed_click = "spotify"
+
 # [[block]]
 # block = "pomodoro"
 # length = 25
