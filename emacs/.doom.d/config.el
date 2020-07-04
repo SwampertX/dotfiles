@@ -88,14 +88,15 @@
 (after! lsp-python-ms
   (set-lsp-priority! 'mspyls 1))
 
-(after! format
-  (setq +format-on-save-enabled-modes
-        '(not emacs-lisp-mode  ; elisp's mechanisms are good enough
-              sql-mode         ; sqlformat is currently broken
-              tex-mode         ; latexindent is broken
-              latex-mode
-              )
-        ))
+;; (after! format
+;;   (setq +format-on-save-enabled-modes
+;;         '(not emacs-lisp-mode  ; elisp's mechanisms are good enough
+;;               sql-mode         ; sqlformat is currently broken
+;;               tex-mode         ; latexindent is broken
+;;               latex-mode
+;;               )
+;;         ))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
