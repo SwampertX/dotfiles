@@ -135,7 +135,7 @@ bindsym $mod+a focus parent
 set $ws1 "1  "
 set $ws2 "2 "
 set $ws3 "3 "
-set $ws4 "4 "
+set $ws4 "4 "
 set $ws5 "5 "
 set $ws6 "6"
 set $ws7 "7"
@@ -182,11 +182,19 @@ exec_always /home/titanx/.screenlayout/second_first.sh
 
 
 # assign default windows
-assign [class="Firefox"]            $ws2
-assign [class="Nightly"]            $ws2
-assign [class="TelegramDesktop"]    $ws9
-assign [class="Slack"]              $ws9
-assign [class="zoom"]              $ws3
+# Workspace 2 for Browsers
+assign [class="Firefox"]                       $ws2
+assign [class="Nightly"]                       $ws2
+# Workspace 3 for Zoom
+assign [class="zoom"]                          $ws3
+# Workspace 4 for Games
+assign [class="galaxyclient.exe"]              $ws4
+assign [class="lutris"]                        $ws4
+# assign [class="Gwent.exe"]                     $ws4
+# Workspace 9 for Social
+assign [class="TelegramDesktop"]               $ws9
+assign [class="Slack"]                         $ws9
+# Workspace 10 for Spotify and Monitoring
 for_window [class="Spotify"] move to workspace $ws10
 
 # reload the configuration file
@@ -260,9 +268,10 @@ exec redshift -l 1.17:103.46 -t 5700:2500
 exec nm-applet
 exec ibus-daemon
 exec flameshot
+exec blueman-applet
 
 # Auto-start
 exec firefox
-exec telegram
-exec slack
+# exec telegram
+# exec slack
 exec dropbox start
