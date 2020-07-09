@@ -70,7 +70,7 @@ Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'} " for VimPlug
 set conceallevel=0
 let g:tex_conceal="abdgm"
 
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 
 " comment
 Plug 'tpope/vim-commentary'
