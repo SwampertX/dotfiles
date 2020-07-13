@@ -266,7 +266,7 @@ exec redshift -l 1.17:103.46 -t 5700:2500
 
 # Enable nice applets
 exec nm-applet
-exec ibus-daemon
+exec_always ibus-daemon
 exec flameshot
 exec blueman-applet
 
