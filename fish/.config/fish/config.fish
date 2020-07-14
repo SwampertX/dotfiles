@@ -42,4 +42,6 @@ starship init fish | source
 cd ~/gojek && source bin/activate.fish && cd -
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/titanx/google-cloud-sdk/path.fish.inc' ]; . '/home/titanx/google-cloud-sdk/path.fish.inc'; end
+if [ -f '/home/titanx/google-cloud-sdk/path.fish.inc' ]
+    . '/home/titanx/google-cloud-sdk/path.fish.inc'
+end
