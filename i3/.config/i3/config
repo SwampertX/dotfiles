@@ -186,7 +186,7 @@ exec_always /home/titanx/.screenlayout/second_first.sh
 assign [class="Firefox"]                       $ws2
 assign [class="Nightly"]                       $ws2
 # Workspace 3 for Zoom
-assign [class="zoom"]                          $ws3
+assign [class="zoom"]                          $ws7
 # Workspace 4 for Games
 assign [class="galaxyclient.exe"]              $ws4
 assign [class="lutris"]                        $ws4

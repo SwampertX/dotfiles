@@ -1,3 +1,3 @@
 #!/bin/bash
-cd /home/titanx/projects/fluminus_cli && git pull && mix deps.get && mix fluminus --download-to=/home/titanx/nus/ivle/y2s2
-# ~/bin/fluminurs --download-to=/home/titanx/nus/ivle/y2s2
+# cd /home/titanx/projects/fluminus_cli && git pull && mix deps.get && mix fluminus --download-to=/home/titanx/nus/ivle/y3s1
+fluminurs --download-to=/home/titanx/nus/ivle/y3s1
