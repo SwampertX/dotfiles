@@ -40,9 +40,9 @@ set JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 # thefuck --alias | source
 starship init fish | source
 
-cd ~/gojek && source bin/activate.fish && cd -
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/titanx/google-cloud-sdk/path.fish.inc' ]
-    . '/home/titanx/google-cloud-sdk/path.fish.inc'
-end
+# cd ~/gojek && source bin/activate.fish && cd -
+#
+# # The next line updates PATH for the Google Cloud SDK.
+# if [ -f '/home/titanx/google-cloud-sdk/path.fish.inc' ]
+#     . '/home/titanx/google-cloud-sdk/path.fish.inc'
+# end
