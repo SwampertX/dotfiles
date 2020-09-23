@@ -59,8 +59,6 @@
                        ("\\.pdf\\'" . "zathura %s"))
         org-journal-dir "~/Dropbox/org/journal"
         org-roam-directory "~/Dropbox/org/roam"
-        org-capture-templates `(("i" "inbox" entry (file ,(concat jethro/org-agenda-directory "inbox.org"))
-                                 "* TODO %?")
         )
 )
 
