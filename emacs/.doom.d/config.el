@@ -59,9 +59,13 @@
                        ("\\.pdf\\'" . "zathura %s"))
         org-journal-dir "~/Dropbox/org/journal"
         org-roam-directory "~/Dropbox/org/roam"
-        )
+        org-capture-templates
+        '(("t" "Todo" entry (file "inbox.org")
+           "* TODO %?\n  %i\n  %a")
+          ("c" "org-protocol-capture" entry (file "inbox.org")
+           "* TODO [[%:link][%:description]]\n\n %i" :immediate-finish t))
+          )
 )
-
 
 (after! pdf-tools
   (map! :map pdf-view-mode-map
