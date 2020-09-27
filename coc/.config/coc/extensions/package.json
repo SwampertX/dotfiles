@@ -5,7 +5,7 @@
     "coc-python": ">=1.2.12",
     "coc-rls": ">=1.1.6",
     "coc-rust-analyzer": ">=0.8.2",
-    "coc-snippets": ">=2.2.0",
+    "coc-snippets": ">=2.2.1",
     "coc-solargraph": ">=1.1.7",
     "coc-texlab": ">=2.1.0",
     "coc-tsserver": ">=1.4.15"
