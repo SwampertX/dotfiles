@@ -271,7 +271,7 @@ exec flameshot
 exec blueman-applet
 
 # Auto-start
-exec firefox
+exec firefox-trunk
 # exec telegram
 # exec slack
 exec dropbox start
