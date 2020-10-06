@@ -4,7 +4,7 @@
     "coc-prettier": ">=1.1.17",
     "coc-python": ">=1.2.12",
     "coc-rls": ">=1.1.6",
-    "coc-rust-analyzer": ">=0.8.2",
+    "coc-rust-analyzer": ">=0.9.0",
     "coc-snippets": ">=2.2.1",
     "coc-solargraph": ">=1.1.7",
     "coc-texlab": ">=2.1.0",
