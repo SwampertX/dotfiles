@@ -47,7 +47,8 @@
                                         "\\newtheorem{definition}{Definition}[section]"
                                         "\\newtheorem{ex}{Example}[section]"
                                         "\\newtheorem{observation}{Observation}[section]"
-                                        "\\DeclareMathOperator{\\diam}{diam}")
+                                        "\\DeclareMathOperator{\\diam}{diam}"
+                                        "\\linespread{1.1}")
         org-latex-packages-alist '(("" "amsthm" nil) ("" minted nil))
         bibtex-dialect 'biblatex
         org-latex-pdf-process '("latexmk -shell-escape -bibtex -pdf %f")
