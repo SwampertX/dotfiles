@@ -1,0 +1,106 @@
+# -*- mode: snippet -*-
+# name: cheatsheet
+# uuid:
+# key: cheatsheet
+# condition: t
+# --
+\documentclass[10pt]{article}
+
+\usepackage[
+a4paper,landscape,
+total={284mm,170mm},
+bottom=7mm,
+top=14mm,headsep=3mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{amsmath, amssymb, amsthm}
+% \usepackage[outputdir=tmp]{minted}
+\usepackage{lmodern}
+\usepackage{multicol}
+\setlength{\columnsep}{4mm}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Page \thepage/\pageref{LastPage}}
+\lhead{Made by Tan Yee Jian (\texttt{@swampertx})}
+\chead{MA2108S Cheat Sheet}
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{crl}{Corollary}[thm]
+\newtheorem{lemma}{Lemma}[thm]
+\newtheorem{note}{Note}[thm]
+\newtheorem{defn}{Definition}[section]
+\newtheorem{ex}{Example}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{obs}{Observation}
+\newtheorem{claim}{Claim}
+
+\newcommand{\pmat}[1]{ \begin{pmatrix}#1\end{pmatrix} }
+\newcommand{\seqn}[1]{(#1)^\infty_{n=1}}
+\newcommand{\seqk}[1]{(#1)^\infty_{k=1}}
+% (series term): returns a series with counter n=1 to \infty.
+\newcommand{\infsrsn}[1]{\sum\limits^\infty_{n=1}#1}
+\newcommand{\infsrsk}[1]{\sum\limits^\infty_{k=1}#1}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\rat}{\mathbb{Q}}
+\newcommand{\cmm}{C(M_1,M_2)}
+\newcommand{\met}[1]{\langle M_{#1},\rho_{#1}\rangle}
+\newcommand{\ntoinf}{\limits_{n\to\infty}}
+\newcommand{\ktoinf}{\limits_{k\to\infty}}
+% \newcommand{\onetoinf}[]{^\infty_{n=1}}
+\newcommand{\limn}[1]{\lim\ntoinf #1}
+\newcommand{\limk}[1]{\lim\ktoinf #1}
+
+\DeclareMathOperator{\spn}{span}
+\DeclareMathOperator{\diam}{diam}
+
+
+\title{MA2108S Cheatsheet}
+\author{Tan Yee Jian}
+\date{\today}
+
+\begin{document}
+\begin{center}
+    \Large{\textbf{MA2108S Cheat Sheet}}
+\end{center}
+\begin{multicols*}{3}
+	\section{The Real Number System}
+	\begin{enumerate}
+		\item \emph{Definition}: a \textbf{field} is the 5-tuple
+		      \(\langle\mathbb{F},+,\cdot,e,u\rangle\), where \(\mathbb{F}\) is a
+		      set containing at least the elements $e$ and $u$, where $e\neq u$,
+		      and satisfies: For any $a,b,c\in\mathbb{F}$,
+		      \begin{enumerate}
+			      \item (commutative add) $a+b=b+a$
+			      \item (associative add) $(a+b)+c=a+(b+c)$
+			      \item (additive identity) $a+e=a$
+			      \item (additive inverse) $\forall a,\exists b\in\mathbb{F}\text{
+					            such that } a+b=e.$
+			      \item (commutative multiply) $a\cdot b=b\cdot a$
+			      \item (associative multiply) $(a\cdot b)\cdot c=a\cdot (b\cdot c)$
+			      \item (multiplicative identity) $a\cdot u=a$
+			      \item (multiplicative inverse) $\forall a,\exists b\in\mathbb{F}
+				            \text{ such that } a\cdot b=u.$
+			      \item (distributive) $\forall a,b,c\in\mathbb{F},
+				            a\cdot(b+c)=a\cdot b+a\cdot c$
+		      \end{enumerate}
+    \end{enumerate}
+
+\end{multicols*}
+\end{document}
