@@ -2,9 +2,9 @@
   "dependencies": {
     "coc-json": ">=1.2.6",
     "coc-prettier": ">=1.1.18",
-    "coc-python": ">=1.2.12",
+    "coc-python": ">=1.2.13",
     "coc-rls": ">=1.1.6",
-    "coc-rust-analyzer": ">=0.13.0",
+    "coc-rust-analyzer": ">=0.14.0",
     "coc-snippets": ">=2.2.3",
     "coc-solargraph": ">=1.1.8",
     "coc-texlab": ">=2.1.0",
