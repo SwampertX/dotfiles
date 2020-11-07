@@ -4,6 +4,8 @@ let mapleader=","
 nnoremap <leader>F :Files<CR>
 nnoremap <leader>B :Buffers<CR>
 nnoremap <leader>C :%s/\s\+$//e<CR>
+nnoremap <leader>vs :vs<CR>:Files<CR>
+nnoremap <leader>sp :sp<CR>:Files<CR>
 
 nnoremap <leader>cc :CocCommand<CR>
 nnoremap <leader>ca :CocAction<CR>
