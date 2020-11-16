@@ -38,7 +38,7 @@ set GOOGLE_APPLICATION_CREDENTIALS ~/.config/gcloud/credentials.json
 set JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 
 # thefuck --alias | source
-starship init fish | source
+# starship init fish | source
 
 # cd ~/gojek && source bin/activate.fish && cd -
 #
