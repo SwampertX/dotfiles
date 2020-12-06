@@ -26,3 +26,4 @@ nnoremap <Tab> za
 
 " <Esc> escapes terminal
 " tnoremap <Esc> <C-\><C-n>
+vnoremap <C-c> "+y
