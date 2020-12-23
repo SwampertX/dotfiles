@@ -1,60 +1,48 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-    "typescriptreact",
-    "typescript",
-    "javascript",
-    "javascriptreact",
-    "css",
-    "java",
-    "markdown"
-  ],
-  "languageserver": {
-    "golang": {
-      "command": "gopls",
-      "args": [],
-      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["go"]
-    },
-    "ccls": {
-      "command": "ccls",
-      "filetypes": ["c", "cpp", "objc", "objcpp"],
-      "rootPatterns": [
-        ".ccls",
-        "compile_commands.json",
-        ".vim/",
-        ".git/",
-        ".hg/"
-      ],
-      "initializationOptions": {
-        "cache": {
-          "directory": "/tmp/ccls"
+    "coc.preferences.formatOnSaveFiletypes": [
+        "typescriptreact",
+        "typescript",
+        "javascript",
+        "javascriptreact",
+        "css",
+        "java",
+        "markdown"
+    ],
+    "languageserver": {
+        "golang": {
+            "command": "gopls",
+            "args": [],
+            "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+            "filetypes": ["go"]
+        },
+        "ccls": {
+            "command": "ccls",
+            "filetypes": ["c", "cpp", "objc", "objcpp"],
+            "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
         }
-      }
     },
     "efm": {
-      "command": "efm-langserver",
-      "args": [],
-      "filetypes": ["vim", "eruby", "markdown"]
+        "command": "efm-langserver",
+        "args": [],
+        "filetypes": ["vim", "eruby", "markdown"]
     },
     "solargraph": {
-      "commandPath": "/home/titanx/.rbenv/shims/solargraph",
-      "formatting": true,
-      "diagnostics": true
+        "commandPath": "/home/titanx/.rbenv/shims/solargraph",
+        "formatting": true,
+        "diagnostics": true
     },
     "java": {
-      "format": {
-        "settings.url": "/home/titanx/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
-        "settings.profile": "Google",
-        "comments.enabled": false
-      }
+        "format": {
+            "settings.url": "/home/titanx/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
+            "settings.profile": "Google",
+            "comments.enabled": false
+        }
     },
     "python.formatting.provider": "black",
-    "python.jediEnabled": false,
-    "haskell": {
-      "command": "haskell-language-server-wrapper",
-      "args": ["--lsp"],
-      "rootPatterns": ["*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml"],
-      "filetypes": ["haskell", "lhaskell"]
-    }
-  }
+    "python.jediEnabled":false
 }
