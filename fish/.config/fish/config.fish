@@ -46,3 +46,6 @@ set JAVA_HOME /usr/lib/jvm/java-11-openjdk-amd64
 # if [ -f '/home/titanx/google-cloud-sdk/path.fish.inc' ]
 #     . '/home/titanx/google-cloud-sdk/path.fish.inc'
 # end
+
+# opam configuration
+source /home/titanx/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
