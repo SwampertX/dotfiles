@@ -85,4 +85,3 @@ export PATH="$PATH:$HOME/opt"
 ##############################
 # Mozilla
 export PATH="/home/titanx/.mozbuild/git-cinnabar:$PATH"
-
