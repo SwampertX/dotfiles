@@ -6,3 +6,4 @@
 #+LATEX_HEADER: \newtheorem{ex}{Example}[section]
 #+LATEX_HEADER: \newtheorem{observation}{Observation}[section]
 #+LATEX_HEADER: \linespread{1.1}
+#+LATEX_HEADER: \usepackage[a4paper, total={6in, 8in}]{geometry}
