@@ -1,7 +1,7 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
 
 ;; Place your private configuration here
-(setq doom-font (font-spec :family "Iosevka Term" :size 15)
+(setq doom-font (font-spec :family "Iosevka Term" :size 17)
       doom-unicode-font (font-spec :family "Noto Color Emoji" :size 15)
       doom-theme 'doom-gruvbox
       user-full-name "Tan Yee Jian"
@@ -42,7 +42,7 @@
                                         "\\addtolength{\\topmargin}{-2.54cm}"
                                         "\\newtheorem{theorem}{Theorem}[section]"
                                         "\\newtheorem{corollary}{Corollary}[theorem]"
-                                        "\\newtheorem{lemma}{Lemma}[theorem]"
+                                        "\\newtheorem{lemma}{Lemma}[section]"
                                         "\\newtheorem{note}{Note}[theorem]"
                                         "\\newtheorem{definition}{Definition}[section]"
                                         "\\newtheorem{ex}{Example}[section]"

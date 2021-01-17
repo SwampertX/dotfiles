@@ -1,0 +1,8 @@
+#+LATEX_HEADER: \newtheorem{theorem}{Theorem}[section]
+#+LATEX_HEADER: \newtheorem{corollary}{Corollary}[theorem]
+#+LATEX_HEADER: \newtheorem{lemma}{Lemma}[section]
+#+LATEX_HEADER: \newtheorem{note}{Note}[theorem]
+#+LATEX_HEADER: \newtheorem{definition}{Definition}[section]
+#+LATEX_HEADER: \newtheorem{ex}{Example}[section]
+#+LATEX_HEADER: \newtheorem{observation}{Observation}[section]
+#+LATEX_HEADER: \linespread{1.1}
