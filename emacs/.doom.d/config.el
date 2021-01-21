@@ -103,4 +103,9 @@
           )
         ))
 
+(after! latex-preview-pane
+  (setq shell-escape-mode t))
+
 (add-hook 'c++-mode-hook #'clang-format+-mode)
+
+(message "Done reloading config.")
