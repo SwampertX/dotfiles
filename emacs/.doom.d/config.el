@@ -54,10 +54,10 @@
         org-latex-pdf-process '("latexmk -shell-escape -bibtex -pdf %f")
         org-latex-listings 'minted
         org-file-apps '((auto-mode . emacs)
-                       (directory . emacs)
-                       ("\\.mm\\'" . default)
-                       ("\\.x?html?\\'" . default)
-                       ("\\.pdf\\'" . "zathura %s"))
+                        (directory . emacs)
+                        ("\\.mm\\'" . default)
+                        ("\\.x?html?\\'" . default)
+                        ("\\.pdf\\'" . "zathura %s"))
         org-journal-dir "~/Dropbox/org/journal"
         org-roam-directory "~/Dropbox/org/roam"
         org-capture-templates
@@ -65,8 +65,23 @@
            "* TODO %?\n  %i\n  %a")
           ("c" "org-protocol-capture" entry (file "inbox.org")
            "* TODO [[%:link][%:description]]\n\n %i" :immediate-finish t))
+        org-agenda-custom-commands
+        '(
+          ;; ("x" agenda)
+          ;; ("y" agenda*)
+          ("x" "Doing and Agenda" ((todo "INPROGRESS|WAITING")(agenda "")))
+          ;; ("W" todo-tree "WAITING")
+          ;; ("u" tags "+boss-urgent")
+          ;; ("v" tags-todo "+boss-urgent")
+          ;; ("U" tags-tree "+boss-urgent")
+          ;; ("f" occur-tree "\\<FIXME\\>")
+          ;; ("h" . )"HOME+Name tags searches") ;description for "h" prefix
+          ;; ("hl" tags "+home+Lisa")
+          ;; ("hp" tags "+home+Peter")
+          ;; ("hk" tags "+home+Kim")
           )
-)
+        )
+  )
 
 (after! pdf-tools
   (map! :map pdf-view-mode-map
@@ -78,15 +93,15 @@
 
 (after! org-gcal
   (setq org-gcal-client-id "473532847251-hpakf41dv1dvqa9bjg9rd58hl9g4to89.apps.googleusercontent.com"
-      org-gcal-file-alist '(("tanyeejian@gmail.com" .  "~/Dropbox/org/cal.org"))))
+        org-gcal-file-alist '(("tanyeejian@gmail.com" .  "~/Dropbox/org/cal.org"))))
 
 ;; (after! rustic
 ;;   (setq rustic-lsp-server 'rust-analyzer))
 
 (after! evil-org
   (map! :map evil-org-mode-map
-      :nv "j" #'evil-next-visual-line
-      :nv "k" #'evil-previous-visual-line))
+        :nv "j" #'evil-next-visual-line
+        :nv "k" #'evil-previous-visual-line))
 
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
