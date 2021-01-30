@@ -7,3 +7,4 @@
 (package! evil-snipe :disable t)
 (package! org-ref)
 (package! clang-format+)
+(package! org-mode :recipe (:repo "https://code.orgmode.org/bzg/org-mode.git"))
