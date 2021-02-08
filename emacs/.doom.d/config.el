@@ -123,4 +123,10 @@
 
 (add-hook 'c++-mode-hook #'clang-format+-mode)
 
+(after! proof-general
+  (map! :mode coq
+        :n "C-c k" #'proof-undo-last-successful-command
+        :n "C-c j" #'proof-assert-next-command-interactive
+        ))
+
 (message "Done reloading config.")
