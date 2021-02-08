@@ -51,6 +51,8 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:/home/titanx/miniconda3/bin"
 # Java Fx 11
 export JAVAFX_HOME="/usr/local/lib/javafx-sdk-11.0.2"
+# COQ
+export PATH="$PATH:/home/titanx/.opam/4.07.1/bin"
 
 
 ##############################
