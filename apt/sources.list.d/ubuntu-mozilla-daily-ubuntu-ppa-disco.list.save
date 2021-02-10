@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu disco main
+deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu focal main # disabled on upgrade to eoan disabled on upgrade to focal
 # deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu disco main

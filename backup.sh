@@ -2,7 +2,7 @@
 
 git_commit_push () {
     git add .
-    git commit -m "Automated backup using backup.sh"
+    git commit -am "Automated backup using backup.sh"
     git push origin master
 }
 

@@ -1,0 +1,2 @@
+# deb http://ppa.launchpad.net/alessandro-strada/google-drive-ocamlfuse-beta/ubuntu focal main # disabled on upgrade to focal
+# deb-src http://ppa.launchpad.net/alessandro-strada/google-drive-ocamlfuse-beta/ubuntu eoan main

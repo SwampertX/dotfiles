@@ -1,8 +1,8 @@
 ### THIS FILE IS AUTOMATICALLY CONFIGURED ###
 # You may comment out entries below, but any other modifications may be lost.
 # Use command 'dpkg-reconfigure mysql-apt-config' as root for modifications.
-deb http://repo.mysql.com/apt/ubuntu/ disco mysql-apt-config
-deb http://repo.mysql.com/apt/ubuntu/ disco mysql-5.7
-deb http://repo.mysql.com/apt/ubuntu/ disco mysql-tools
-deb http://repo.mysql.com/apt/ubuntu/ disco mysql-tools-preview
-deb-src http://repo.mysql.com/apt/ubuntu/ disco mysql-5.7
+# deb http://repo.mysql.com/apt/ubuntu/ eoan mysql-apt-config # disabled on upgrade to eoan
+# deb http://repo.mysql.com/apt/ubuntu/ eoan mysql-5.7 # disabled on upgrade to eoan
+# deb http://repo.mysql.com/apt/ubuntu/ eoan mysql-tools # disabled on upgrade to eoan
+# deb http://repo.mysql.com/apt/ubuntu/ eoan mysql-tools-preview # disabled on upgrade to eoan
+# deb-src http://repo.mysql.com/apt/ubuntu/ eoan mysql-5.7 # disabled on upgrade to eoan

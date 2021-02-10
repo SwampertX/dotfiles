@@ -1,0 +1,2 @@
+# deb http://ppa.launchpad.net/swi-prolog/stable/ubuntu groovy main # disabled on upgrade to groovy
+# deb-src http://ppa.launchpad.net/swi-prolog/stable/ubuntu focal main

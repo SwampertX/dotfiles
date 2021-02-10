@@ -1,2 +1,2 @@
-deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu disco main
+# deb http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu groovy main # disabled on upgrade to eoan disabled on upgrade to focal disabled on upgrade to groovy
 # deb-src http://ppa.launchpad.net/ubuntu-mozilla-daily/ppa/ubuntu disco main

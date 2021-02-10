@@ -1,0 +1,2 @@
+# deb http://ppa.launchpad.net/lutris-team/lutris/ubuntu groovy main # disabled on upgrade to groovy
+# deb-src http://ppa.launchpad.net/lutris-team/lutris/ubuntu focal main

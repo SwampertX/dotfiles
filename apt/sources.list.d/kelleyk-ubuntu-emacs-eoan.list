@@ -1,0 +1,3 @@
+# deb http://ppa.launchpad.net/kelleyk/emacs/ubuntu focal main # disabled on upgrade to focal
+# deb-src http://ppa.launchpad.net/kelleyk/emacs/ubuntu eoan main
+# deb-src http://ppa.launchpad.net/kelleyk/emacs/ubuntu eoan main

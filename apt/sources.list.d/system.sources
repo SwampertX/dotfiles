@@ -1,0 +1,7 @@
+X-Repolib-Name: Pop_OS System Sources
+Enabled: yes
+Types: deb deb-src
+URIs: http://us.archive.ubuntu.com/ubuntu/
+Suites: groovy groovy-security groovy-updates groovy-backports
+Components: main restricted universe multiverse
+X-Repolib-Default-Mirror: http://us.archive.ubuntu.com/ubuntu/
