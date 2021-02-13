@@ -271,18 +271,18 @@ bar {
 # Wallpaper and lockscreen
 # exec_always feh --randomize --bg-tile $config/wallpapers/*
 bindsym $mod+shift+x exec $config/lockscreen/randomlock.fish
-exec_always $config/wallpapers/randomwall.sh
-exec_always compton
-exec redshift -l 1.17:103.46 -t 5700:2500
+exec_always --no-startup-id $config/wallpapers/randomwall.sh
+exec_always --no-startup-id compton
+exec --no-startup-id redshift -l 1.17:103.46 -t 5700:2500
 
 # Enable nice applets
-exec nm-applet
-exec_always ibus-daemon
-exec flameshot
+exec --no-startup-id nm-applet
+exec_always --no-startup-id ibus-daemon
+exec --no-startup-id flameshot
 # exec blueman-applet
 
 # Auto-start
-exec firefox
+exec --no-startup-id firefox
 # exec telegram
 # exec slack
-exec dropbox start
+exec --no-startup-id dropbox start
