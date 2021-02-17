@@ -1,1 +1,1 @@
-/home/titanx/.fzf/shell/key-bindings.fish
+/home/titanx/projects/installations/fzf/shell/key-bindings.fish
