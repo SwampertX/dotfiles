@@ -41,3 +41,4 @@ set nohlsearch
 let g:tex_flavor = "latex"
 
 set undofile
+set inccommand=nosplit
