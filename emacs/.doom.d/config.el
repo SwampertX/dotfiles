@@ -1,6 +1,4 @@
 ;;; .doom.d/config.el -*- lexical-binding: t; -*-
-
-;; Place your private configuration here
 (setq doom-font (font-spec :family "Iosevka Term" :size 18)
       doom-unicode-font (font-spec :family "Noto Color Emoji" :size 15)
       doom-theme 'doom-gruvbox
@@ -67,19 +65,12 @@
            "* TODO [[%:link][%:description]]\n\n %i" :immediate-finish t))
         org-agenda-custom-commands
         '(
-          ;; ("x" agenda)
-          ;; ("y" agenda*)
           ("x" "Doing and Agenda" ((todo "INPROGRESS|WAITING")(agenda "")))
-          ;; ("W" todo-tree "WAITING")
-          ;; ("u" tags "+boss-urgent")
-          ;; ("v" tags-todo "+boss-urgent")
-          ;; ("U" tags-tree "+boss-urgent")
-          ;; ("f" occur-tree "\\<FIXME\\>")
-          ;; ("h" . )"HOME+Name tags searches") ;description for "h" prefix
-          ;; ("hl" tags "+home+Lisa")
-          ;; ("hp" tags "+home+Peter")
-          ;; ("hk" tags "+home+Kim")
           )
+        org-global-properties '(("Effort_ALL" . "0 0:10 0:30 1:00 2:00 3:00 4:00 5:00 6:00 7:00"))
+        org-columns-default-format "%25ITEM %TODO %3PRIORITY %TAGS %17Effort(Estimated Effort){:} %CLOCKSUM"
+        ;; org-columns-default-format-for-agenda "%25ITEM %TODO %3PRIORITY %TAGS %17Effort(Estimated Effort){:} %CLOCKSUM"
+        ;; org-columns-default-format-for-agenda nil
         )
   )
 
