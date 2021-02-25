@@ -13,7 +13,7 @@ call plug#begin('~/.config/vim/plugged')
 Plug 'tpope/vim-surround'
 
 " FZF
-Plug '~/.fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 " post install (yarn install | npm install) then load plugin only for editing supported files
@@ -81,13 +81,13 @@ Plug 'wellle/targets.vim'
 " git wrapper, by tim pope
 " Plug 'tpope/vim-fugitive'
 
-Plug 'jceb/vim-orgmode'
+" Plug 'jceb/vim-orgmode'
 
 Plug 'jiangmiao/auto-pairs'
 let g:autopairs={'(':'*', '[':']', '{':'}',"'":"'",'"':'"', '`':'`','$':'$'}
 
 Plug 'preservim/nerdtree'
 
-Plug 'gisraptor/vim-lilypond-integrator'
+" Plug 'gisraptor/vim-lilypond-integrator'
 
 call plug#end()
