@@ -17,6 +17,7 @@ autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
 
 set termguicolors
 colorscheme gruvbox
+" set background=light
 
 " highlight ExtraWhitespace ctermbg=red guibg=red
 " match ExtraWhitespace /\s\+$/

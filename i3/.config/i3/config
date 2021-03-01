@@ -255,7 +255,7 @@ bindsym Print exec flameshot full -p ~/Pictures
 
 # i3status-rs
 bar {
-    font pango:Iosevka Term, FontAwesome 10
+    font pango:Iosevka Term, FontAwesome 11
     position bottom
     status_command ~/bin/i3status-rs $config/i3/status.toml
     colors {

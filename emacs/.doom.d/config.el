@@ -9,13 +9,13 @@
 ;; (custom-set-faces! '(default :height 135))
 
 (defun yeejian/org-start-work () "Start working on an item in Agenda."
-       (org-agenda-todo "INPROGRESS")
-       (org-agenda-clock-in))
+       (org-todo "INPROGRESS")
+       (org-clock-in))
 
 
 (defun yeejian/org-stop-work () "Stop working on an item in Agenda."
-       (org-agenda-todo "WAITING")
-       (org-agenda-clock-out))
+       (org-todo "WAITING")
+       (org-clock-out))
 
 (after! org
   (map! :map org-mode-map
@@ -23,10 +23,9 @@
         :n "M-j" #'org-metaup
         :n "S-k" #'org-shiftup
         :n "S-j" #'org-shiftdown
+        :m "SPC m c s" #'yeejian/org-start-work
+        :m "SPC m c p" #'yeejian/org-stop-work
         )
-  (map! :map org-agenda-mode-map
-        :m "I" #'yeejian/org-start-work
-        :m "O" #'yeejian/org-stop-work)
   (setq org-todo-keywords '((sequence "TODO(t)" "INPROGRESS(i)" "WAITING(w)" "|" "DONE(d!)" "CANCELLED(c@)"))
         org-agenda-files (list "~/Dropbox/org/")
         org-directory "~/Dropbox/org/"
@@ -80,7 +79,7 @@
           ("x" "Doing and Agenda" ((todo "INPROGRESS|WAITING")(agenda "")))
           )
         org-global-properties '(("Effort_ALL" . "0 0:10 0:30 1:00 2:00 3:00 4:00 5:00 6:00 7:00"))
-        org-columns-default-format "%58ITEM %TODO %3PRIORITY %TAGS %5Effort(Est.){:} %CLOCKSUM(Spent)"
+        org-columns-default-format "%58ITEM %TODO %3PRIORITY %TAGS %5Effort(Est.){:} %CLOCKSUM(Spent){:}"
         ;; org-columns-default-format-for-agenda "%25ITEM %TODO %3PRIORITY %TAGS %17Effort(Estimated Effort){:} %CLOCKSUM"
         ;; org-columns-default-format-for-agenda nil
         )
