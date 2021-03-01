@@ -1,0 +1,9 @@
+The prftree package provides a package to write proof trees for
+natural deduction calculi, sequent-like calculi, and similar.
+
+The package is composed by the filed
+- prftree.sty: containing the LaTeX engine to typeset proof trees;
+- prftreedoc.pdf: the human readable documentation for the package;
+- prftreedoc.tex: the source code for the documentation.
+
+The package is distributed under the GNU General Public License.
