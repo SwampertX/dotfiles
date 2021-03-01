@@ -20,7 +20,6 @@ abbr -a sshnus "env TERM=xterm ssh -J sunfire"
 
 # some default flags
 abbr -a valgrind "valgrind --leak-check=full --show-leak-kinds=all -s"
-abbr -a gcc "gcc -g -Wall -Wextra"
 
 abbr -a doom "~/.emacs.d/bin/doom"
 
