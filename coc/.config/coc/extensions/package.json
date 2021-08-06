@@ -7,7 +7,6 @@
     "coc-rust-analyzer": ">=0.32.0",
     "coc-snippets": ">=2.2.9",
     "coc-solargraph": ">=1.2.0",
-    "coc-texlab": ">=2.3.0",
-    "coc-tsserver": ">=1.6.7"
+    "coc-texlab": ">=2.3.0"
   }
 }

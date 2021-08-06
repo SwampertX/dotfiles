@@ -82,11 +82,11 @@ post_install () {
 }
 
 main () {
-    nice_keys &&
-    update_packages &&
-    install_programs &&
-    ./scripts/stow_all.sh
-    post_install
+    nice_keys
+#    update_packages &&
+#    install_programs &&
+#    ./scripts/stow_all.sh
+#    post_install
 }
 
 main

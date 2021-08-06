@@ -90,4 +90,8 @@ Plug 'preservim/nerdtree'
 
 " Plug 'gisraptor/vim-lilypond-integrator'
 
+Plug 'neovim/nvim-lspconfig'
+
+Plug 'vhyrro/neorg' | Plug 'nvim-lua/plenary.nvim'
+
 call plug#end()

@@ -2,20 +2,21 @@
 (setq doom-font (font-spec :family "Iosevka Term" :size 18)
       doom-unicode-font (font-spec :family "Noto Color Emoji" :size 15)
       doom-theme 'doom-gruvbox
+      doom-variable-pitch-font (font-spec :family "Times New Roman" :size 15)
       user-full-name "Tan Yee Jian"
       user-mail-address "tanyeejian@gmail.com"
       )
 
 ;; (custom-set-faces! '(default :height 135))
 
-(defun yeejian/org-start-work () "Start working on an item in Agenda."
-       (org-agenda-todo "INPROGRESS")
-       (org-agenda-clock-in))
+;; (defun yeejian/org-start-work () "Start working on an item in Agenda."
+;;        (org-agenda-todo "INPROGRESS")
+;;        (org-agenda-clock-in))
 
 
-(defun yeejian/org-stop-work () "Stop working on an item in Agenda."
-       (org-agenda-todo "WAITING")
-       (org-agenda-clock-out))
+;; (defun yeejian/org-stop-work () "Stop working on an item in Agenda."
+;;        (org-agenda-todo "WAITING")
+;;        (org-agenda-clock-out))
 
 (after! org
   (map! :map org-mode-map
@@ -24,9 +25,9 @@
         :n "S-k" #'org-shiftup
         :n "S-j" #'org-shiftdown
         )
-  (map! :map org-agenda-mode-map
-        :m "I" #'yeejian/org-start-work
-        :m "O" #'yeejian/org-stop-work)
+  ;; (map! :map org-agenda-mode-map
+  ;;       :m "I" #'yeejian/org-start-work
+  ;;       :m "O" #'yeejian/org-stop-work)
   (setq org-todo-keywords '((sequence "TODO(t)" "INPROGRESS(i)" "WAITING(w)" "|" "DONE(d!)" "CANCELLED(c@)"))
         org-agenda-files (list "~/Dropbox/org/")
         org-directory "~/Dropbox/org/"
@@ -59,7 +60,7 @@
                                         "\\newtheorem{observation}{Observation}[section]"
                                         "\\DeclareMathOperator{\\diam}{diam}"
                                         "\\linespread{1.1}")
-        org-latex-packages-alist '(("" "amsthm" nil) ("" minted nil))
+        org-latex-packages-alist '(("" "amsthm" nil) ("" "minted" nil) ("" "hyperref" nil))
         bibtex-dialect 'biblatex
         org-latex-pdf-process '("latexmk -shell-escape -bibtex -pdf %f")
         org-latex-listings 'minted
@@ -68,8 +69,8 @@
                         ("\\.mm\\'" . default)
                         ("\\.x?html?\\'" . default)
                         ("\\.pdf\\'" . "zathura %s"))
-        org-journal-dir "~/Dropbox/org/journal"
-        org-roam-directory "~/Dropbox/org/roam"
+        ;; org-journal-dir "~/Dropbox/org/journal"
+        ;; org-roam-directory "~/Dropbox/org/roam"
         org-capture-templates
         '(("t" "Todo" entry (file "inbox.org")
            "* TODO %?\n  %i\n  %a")
@@ -124,12 +125,46 @@
 ;; (after! latex-preview-pane
 ;;   (setq shell-escape-mode t))
 
-(add-hook 'c++-mode-hook #'clang-format+-mode)
+;; (defun compile-latex ()
+;;   "Compile the current file into pdf."
+;;   (let ((command (concat "pdflatex -synctex 1 -shell-escape " (buffer-file-name))))
+;;     (shell-command command)
+;;     (message (concat "Done compiling " command))
+;;     )
+;;   )
 
-(after! proof-general
-  (map! :mode coq
-        :n "C-c k" #'proof-undo-last-successful-command
-        :n "C-c j" #'proof-assert-next-command-interactive
-        ))
 
+;; (add-hook 'latex-mode-hook
+;;           (lambda ()
+;;             (add-hook 'after-save-hook 'compile-latex nil 'make-it-local)))
+
+;; (add-hook 'c++-mode-hook #'clang-format+-mode)
+
+;; (after! proof-general
+;;   (map! :mode coq
+;;         :n "C-c k" #'proof-undo-last-successful-command
+;;         :n "C-c j" #'proof-assert-next-command-interactive
+;;         ))
+
+;; (after! lsp-mode
+;;   (lsp-register-client
+;;    (make-lsp-client
+;;     :new-connection
+;;     (lsp-stdio-connection (list "swipl"
+;;                                 "-g" "use_module(library(lsp_server))."
+;;                                 "-g" "lsp_server:main"
+;;                                 "-t" "halt"
+;;                                 "--" "stdio"))
+;;     :major-modes '(prolog-mode)
+;;     :priority 1
+;;     :multi-root t
+;;     :server-id 'prolog-ls)))
+
+(after! fstar-mode
+  (setq fstar-executable "/home/yeejian/Downloads/fstar/bin/fstar.exe")
+  )
+
+(after! mixed-pitch-mode
+  (setq )
+  )
 (message "Done reloading config.")

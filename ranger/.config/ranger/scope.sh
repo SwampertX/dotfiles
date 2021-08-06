@@ -40,12 +40,12 @@ FILE_EXTENSION_LOWER="$(printf "%s" "${FILE_EXTENSION}" | tr '[:upper:]' '[:lowe
 
 ## Settings
 HIGHLIGHT_SIZE_MAX=262143  # 256KiB
-HIGHLIGHT_TABWIDTH=${HIGHLIGHT_TABWIDTH:-8}
-HIGHLIGHT_STYLE=${HIGHLIGHT_STYLE:-pablo}
+HIGHLIGHT_TABWIDTH="${HIGHLIGHT_TABWIDTH:-8}"
+HIGHLIGHT_STYLE="${HIGHLIGHT_STYLE:-pablo}"
 HIGHLIGHT_OPTIONS="--replace-tabs=${HIGHLIGHT_TABWIDTH} --style=${HIGHLIGHT_STYLE} ${HIGHLIGHT_OPTIONS:-}"
-PYGMENTIZE_STYLE=${PYGMENTIZE_STYLE:-autumn}
-OPENSCAD_IMGSIZE=${RNGR_OPENSCAD_IMGSIZE:-1000,1000}
-OPENSCAD_COLORSCHEME=${RNGR_OPENSCAD_COLORSCHEME:-Tomorrow Night}
+PYGMENTIZE_STYLE="${PYGMENTIZE_STYLE:-autumn}"
+OPENSCAD_IMGSIZE="${RNGR_OPENSCAD_IMGSIZE:-1000,1000}"
+OPENSCAD_COLORSCHEME="${RNGR_OPENSCAD_COLORSCHEME:-Tomorrow Night}"
 
 handle_extension() {
     case "${FILE_EXTENSION_LOWER}" in
@@ -73,13 +73,6 @@ handle_extension() {
               fmt -w "${PV_WIDTH}" && exit 5
             exiftool "${FILE_PATH}" && exit 5
             exit 1;;
-             # pdftoppm -f 1 -l 1 \
-             #          -scale-to-x "${DEFAULT_SIZE%x*}" \
-             #          -scale-to-y -1 \
-             #          -singlefile \
-             #          -jpeg -tiffcompression jpeg \
-             #          -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \
-             #     && exit 6 || exit 1;;
 
         ## BitTorrent
         torrent)
@@ -111,7 +104,7 @@ handle_extension() {
             ;;
 
         ## JSON
-        json)
+        json|ipynb)
             jq --color-output . "${FILE_PATH}" && exit 5
             python -m json.tool -- "${FILE_PATH}" && exit 5
             ;;
@@ -140,10 +133,10 @@ handle_image() {
         #     exit 1;;
 
         # DjVu
-         image/vnd.djvu)
-             ddjvu -format=tiff -quality=90 -page=1 -size="${DEFAULT_SIZE}" \
-                   - "${IMAGE_CACHE_PATH}" < "${FILE_PATH}" \
-                   && exit 6 || exit 1;;
+        image/vnd.djvu)
+        ddjvu -format=tiff -quality=90 -page=1 -size="${DEFAULT_SIZE}" \
+            - "${IMAGE_CACHE_PATH}" < "${FILE_PATH}" \
+            && exit 6 || exit 1;;
 
         ## Image
         image/*)
@@ -160,21 +153,21 @@ handle_image() {
             ## as above), but might fail for unsupported types.
             exit 7;;
 
-        ## Video
-        # video/*)
-        #     # Thumbnail
-        #     ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
-        #     exit 1;;
+        # Video
+        video/*)
+        # Thumbnail
+        ffmpegthumbnailer -i "${FILE_PATH}" -o "${IMAGE_CACHE_PATH}" -s 0 && exit 6
+        exit 1;;
 
         # PDF
-         application/pdf)
-             pdftoppm -f 1 -l 1 \
-                      -scale-to-x "${DEFAULT_SIZE%x*}" \
-                      -scale-to-y -1 \
-                      -singlefile \
-                      -jpeg -tiffcompression jpeg \
-                      -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \
-                 && exit 6 || exit 1;;
+        application/pdf)
+        pdftoppm -f 1 -l 1 \
+            -scale-to-x "${DEFAULT_SIZE%x*}" \
+            -scale-to-y -1 \
+            -singlefile \
+            -jpeg -tiffcompression jpeg \
+            -- "${FILE_PATH}" "${IMAGE_CACHE_PATH%.*}" \
+            && exit 6 || exit 1;;
 
 
         ## ePub, MOBI, FB2 (using Calibre)
@@ -225,7 +218,8 @@ handle_image() {
         #     { [ "$rar" ] && fn=$(unrar lb -p- -- "${FILE_PATH}"); } || \
         #     { [ "$zip" ] && fn=$(zipinfo -1 -- "${FILE_PATH}"); } || return
         #
-        #     fn=$(echo "$fn" | python -c "import sys; import mimetypes as m; \
+        #     fn=$(echo "$fn" | python -c "from __future__ import print_function; \
+        #             import sys; import mimetypes as m; \
         #             [ print(l, end='') for l in sys.stdin if \
         #               (m.guess_type(l[:-1])[0] or '').startswith('image/') ]" |\
         #         sort -V | head -n 1)
