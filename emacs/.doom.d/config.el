@@ -70,7 +70,7 @@
                         ("\\.x?html?\\'" . default)
                         ("\\.pdf\\'" . "zathura %s"))
         ;; org-journal-dir "~/Dropbox/org/journal"
-        ;; org-roam-directory "~/Dropbox/org/roam"
+        org-roam-directory "~/Dropbox/org/roam"
         org-capture-templates
         '(("t" "Todo" entry (file "inbox.org")
            "* TODO %?\n  %i\n  %a")
@@ -84,6 +84,7 @@
         org-columns-default-format "%58ITEM %TODO %3PRIORITY %TAGS %5Effort(Est.){:} %CLOCKSUM(Spent)"
         ;; org-columns-default-format-for-agenda "%25ITEM %TODO %3PRIORITY %TAGS %17Effort(Estimated Effort){:} %CLOCKSUM"
         ;; org-columns-default-format-for-agenda nil
+        org-download-method 'directory
         )
   )
 

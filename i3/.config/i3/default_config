@@ -214,7 +214,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit' -f 'pango:Iosevka'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -289,6 +289,7 @@ exec --no-startup-id redshift -l 1.17:103.46 -t 5700:2500 # Singapore
 exec --no-startup-id nm-applet
 exec-always --no-startup-id ibus-daemon --daemonize
 exec --no-startup-id flameshot
+exec --no-startup-id blueberry-tray # for bluetooth
 
 # Auto-start
 exec --no-startup-id $browser
