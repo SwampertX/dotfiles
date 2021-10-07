@@ -94,4 +94,6 @@ Plug 'neovim/nvim-lspconfig'
 
 Plug 'vhyrro/neorg' | Plug 'nvim-lua/plenary.nvim'
 
+Plug 'cespare/vim-toml', { 'branch': 'main' }
+
 call plug#end()
