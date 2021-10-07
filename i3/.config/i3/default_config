@@ -201,7 +201,7 @@ assign [class="Nightly"]                       $ws2
 # assign [class="zoom"]                          $ws3
 # Workspace 4 for Games
 assign [class="galaxyclient.exe"]              $ws4
-assign [class="lutris"]                        $ws4
+assign [class="Lutris"]                        $ws4
 # assign [class="Gwent.exe"]                     $ws4
 # Workspace 9 for Social
 assign [class="TelegramDesktop"]               $ws9
@@ -289,7 +289,7 @@ exec --no-startup-id redshift -l 1.17:103.46 -t 5700:2500 # Singapore
 exec --no-startup-id nm-applet
 exec-always --no-startup-id ibus-daemon --daemonize
 exec --no-startup-id flameshot
-exec --no-startup-id blueberry-tray # for bluetooth
+# exec --no-startup-id blueberry-tray # for bluetooth
 
 # Auto-start
 exec --no-startup-id $browser
